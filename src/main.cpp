@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2");
+uint256 hashGenesisBlock("0x3392c82fc62a907e0ef94100ddddc0e5c77d86ec37fe37eafd609763a5a9f485");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Litecoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1296,16 +1296,6 @@ void CBlockHeader::UpdateTime(const CBlockIndex* pindexPrev)
     if (fTestNet)
         nBits = GetNextWorkRequired(pindexPrev, this);
 }
-
-
-
-
-
-
-
-
-
-
 
 const CTxOut &CTransaction::GetOutputFor(const CTxIn& input, CCoinsViewCache& view)
 {
@@ -2770,7 +2760,22 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1317972665;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 2084524493;
+#if 1
+        block.nNonce   = 535565;
+#else
+        uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+        for (int nn = 535565;; nn++) {
+            block.nNonce = nn;
+            uint256 hash = block.GetPoWHash();
+            if ((nn & 0xffff) == 0) {
+                printf("calc\n");
+                sleep(1);
+            }
+            if (hash > hashTarget) continue;
+            printf("proof-of-work found\n  nn: %d\n  hash: %s  \ntarget: %s\n", nn, hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+            break;
+        }
+#endif
 
         if (fTestNet)
         {
@@ -4544,7 +4549,7 @@ void static LitecoinMiner(CWallet *pwallet)
 {
     printf("LitecoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("litecoin-miner");
+    RenameThread("sha1coin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4593,24 +4598,9 @@ void static LitecoinMiner(CWallet *pwallet)
             unsigned int nHashesDone = 0;
 
             uint256 thash;
-            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
             loop
             {
-#if defined(USE_SSE2)
-                // Detection would work, but in cases where we KNOW it always has SSE2,
-                // it is faster to use directly than to use a function pointer or conditional.
-#if defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64) || (defined(MAC_OSX) && defined(__i386__))
-                // Always SSE2: x86_64 or Intel MacOS X
-                scrypt_1024_1_1_256_sp_sse2(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad);
-#else
-                // Detect SSE2: 32bit x86 Linux or Windows
-                scrypt_1024_1_1_256_sp(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad);
-#endif
-#else
-                // Generic scrypt
-                scrypt_1024_1_1_256_sp_generic(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad);
-#endif
-
+                thash = Hash1(BEGIN(pblock->nVersion), END(pblock->nNonce));
                 if (thash <= hashTarget)
                 {
                     // Found a solution

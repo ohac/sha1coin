@@ -1330,6 +1330,16 @@ public:
     void UpdateTime(const CBlockIndex* pindexPrev);
 };
 
+template<typename T1>
+inline uint256 Hash1(const T1 pbegin, const T1 pend)
+{
+    static unsigned char pblank[1];
+    uint256 hash1 = 0;
+    SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]), (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
+    hash1 <<= 96;
+    return hash1;
+}
+
 class CBlock : public CBlockHeader
 {
 public:
@@ -1365,9 +1375,7 @@ public:
 
     uint256 GetPoWHash() const
     {
-        uint256 thash;
-        scrypt_1024_1_1_256(BEGIN(nVersion), BEGIN(thash));
-        return thash;
+        return Hash1(BEGIN(nVersion), END(nNonce));
     }
 
     CBlockHeader GetBlockHeader() const
