@@ -1356,7 +1356,9 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend,
             hash2 <<= 96;
             enc2.encode((const char *)hash2.begin() + 12, 9, output2);
             if (memcmp(output2, trip, triplen) == 0) {
-                printf("tripkey: %s, trip: %s\n", &output[i], output2);
+                char tripkey[13] = "";
+                memcpy(tripkey, &output[i], 12);
+                printf("tripkey: #%s, trip: %s\n", tripkey, output2);
             }
         }
     }
