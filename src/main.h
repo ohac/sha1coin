@@ -1332,7 +1332,9 @@ public:
 };
 
 template<typename T1>
-inline uint256 Hash1(const T1 pbegin, const T1 pend)
+inline uint256 Hash1(const T1 pbegin, const T1 pend,
+        const bool find = false, const char *trip = NULL,
+        const int triplen = 0)
 {
     static unsigned char pblank[1];
     uint160 hash1 = 0;
@@ -1347,17 +1349,16 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend)
         SHA1((unsigned char*)&output[i], 12, (unsigned char*)&hash2);
         hash3 <<= 8;
         hash3 ^= hash2;
-// TODO
-#if 1
-        // 2ch trip finder
-        char output2[12 + 1] = "";
-        base64::encoder enc2;
-        hash2 <<= 96;
-        enc2.encode((const char *)hash2.begin() + 12, 9, output2);
-        if (output2[0] == 'S' && output2[1] == 'H') { // for example
-            printf("in: %s, out160: %s\n", &output[i], output2);
+        if (find) {
+            // 2ch trip finder
+            char output2[12 + 1] = "";
+            base64::encoder enc2;
+            hash2 <<= 96;
+            enc2.encode((const char *)hash2.begin() + 12, 9, output2);
+            if (memcmp(output2, trip, triplen) == 0) {
+                printf("tripkey: %s, trip: %s\n", &output[i], output2);
+            }
         }
-#endif
     }
     return hash3;
 }
