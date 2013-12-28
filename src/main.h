@@ -12,6 +12,7 @@
 #include "scrypt.h"
 
 #include <list>
+#include <b64/encode.h>
 
 class CWallet;
 class CBlock;
@@ -1334,10 +1335,31 @@ template<typename T1>
 inline uint256 Hash1(const T1 pbegin, const T1 pend)
 {
     static unsigned char pblank[1];
-    uint256 hash1 = 0;
-    SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]), (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
-    hash1 <<= 96;
-    return hash1;
+    uint160 hash1 = 0;
+    SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]),
+            (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
+    base64::encoder enc;
+    char output[30] = "";
+    enc.encode((const char *)hash1.begin(), hash1.size(), output);
+    uint256 hash3 = 0;
+    for (int i = 0; i < 13; i++) {
+        uint256 hash2 = 0;
+        SHA1((unsigned char*)&output[i], 12, (unsigned char*)&hash2);
+        hash3 <<= 8;
+        hash3 ^= hash2;
+// TODO
+#if 1
+        // 2ch trip finder
+        char output2[12 + 1] = "";
+        base64::encoder enc2;
+        hash2 <<= 96;
+        enc2.encode((const char *)hash2.begin() + 12, 9, output2);
+        if (output2[0] == 'S' && output2[1] == 'H') { // for example
+            printf("in: %s, out160: %s\n", &output[i], output2);
+        }
+#endif
+    }
+    return hash3;
 }
 
 class CBlock : public CBlockHeader

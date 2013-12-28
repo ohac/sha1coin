@@ -31,7 +31,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x3392c82fc62a907e0ef94100ddddc0e5c77d86ec37fe37eafd609763a5a9f485");
+uint256 hashGenesisBlock("0x8de6df02e55ec18ad51a0cbc720bba34e54a219b0e521343bdfb83b081f9bcb3");
+
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Sha1coin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2725,6 +2726,37 @@ bool LoadBlockIndex()
     return true;
 }
 
+// TODO
+template<typename T1>
+inline uint256 Hash2(const T1 pbegin, const T1 pend)
+{
+    static unsigned char pblank[1];
+    uint160 hash1 = 0;
+    SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]),
+            (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
+    base64::encoder enc;
+    char output[30] = "";
+    enc.encode((const char *)hash1.begin(), hash1.size(), output);
+    uint256 hash3 = 0;
+    for (int i = 0; i < 13; i++) {
+        uint256 hash2 = 0;
+        SHA1((unsigned char*)&output[i], 12, (unsigned char*)&hash2);
+        hash3 <<= 8;
+        hash3 ^= hash2;
+#if 1
+        // 2ch trip finder
+        char output2[12 + 1] = "";
+        base64::encoder enc2;
+        hash2 <<= 96;
+        enc2.encode((const char *)hash2.begin() + 12, 9, output2);
+        if (output2[0] == 'S' && output2[1] == 'H') { // for example
+            printf("in: %s, out160: %s\n", &output[i], output2);
+        }
+#endif
+    }
+    return hash3;
+}
+
 
 bool InitBlockIndex() {
     // Check whether we're already initialized
@@ -2760,19 +2792,21 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1317972665;
         block.nBits    = 0x1e0ffff0;
-#if 1
-        block.nNonce   = 535565;
+#if 0
+        block.nNonce   = 1729487;
 #else
         uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-        for (int nn = 535565;; nn++) {
+        for (int nn = 1700000;; nn++) {
             block.nNonce = nn;
+            // TODO
+#if 1
             uint256 hash = block.GetPoWHash();
-            if ((nn & 0xffff) == 0) {
-                printf("calc\n");
-                sleep(1);
-            }
+#else
+            uint256 hash = Hash2(BEGIN(block.nVersion), END(block.nNonce));
+#endif
             if (hash > hashTarget) continue;
             printf("proof-of-work found\n  nn: %d\n  hash: %s  \ntarget: %s\n", nn, hash.GetHex().c_str(), hashTarget.GetHex().c_str());
+//          exit(0);
             break;
         }
 #endif
