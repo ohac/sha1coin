@@ -1341,13 +1341,14 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend,
     SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]),
             (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
     base64::encoder enc;
-    char output[30] = "";
+    char output[38]; // 26 + 11 + 1
     enc.encode((const char *)hash1.begin(), hash1.size(), output);
+    memcpy(&output[26], output, 11);
+    output[37] = 0;
     uint256 hash3 = 0;
-    for (int i = 0; i < 13; i++) {
+    for (int i = 0; i < 26; i++) {
         uint256 hash2 = 0;
         SHA1((unsigned char*)&output[i], 12, (unsigned char*)&hash2);
-        hash3 <<= 8;
         hash3 ^= hash2;
         if (find) {
             // 2ch trip finder
@@ -1362,7 +1363,7 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend,
             }
         }
     }
-    return hash3;
+    return hash3 << 96; // TODO fill another 96 bits if difficulty is too high
 }
 
 class CBlock : public CBlockHeader

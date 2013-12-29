@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x8de6df02e55ec18ad51a0cbc720bba34e54a219b0e521343bdfb83b081f9bcb3");
+uint256 hashGenesisBlock("0xa1e3016da48460f87073908ade2f80f71e154b6eeeaf7780143abed294ca0777");
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Sha1coin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -2761,10 +2761,10 @@ bool InitBlockIndex() {
         block.nTime    = 1317972665;
         block.nBits    = 0x1e0ffff0;
 #if 0
-        block.nNonce   = 1729487;
+        block.nNonce   = 1821051;
 #else
         uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-        for (int nn = 1700000;; nn++) {
+        for (int nn = 1800000;; nn++) {
             block.nNonce = nn;
             uint256 hash = block.GetPoWHash();
             if (hash > hashTarget) continue;
