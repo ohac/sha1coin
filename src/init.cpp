@@ -338,7 +338,6 @@ std::string HelpMessage()
         "  -bloomfilters          " + _("Allow peers to set bloom filters (default: 1)") + "\n" +
 #ifdef USE_UPNP
 #if USE_UPNP
-aaa
         "  -upnp                  " + _("Use UPnP to map the listening port (default: 1 when listening)") + "\n" +
 #else
         "  -upnp                  " + _("Use UPnP to map the listening port (default: 0)") + "\n" +
