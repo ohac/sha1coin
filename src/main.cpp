@@ -1066,6 +1066,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 50 * COIN;
 
+    if (nHeight < 10000) nSubsidy /= 10; // No Premine, No Instamine
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
     nSubsidy >>= (nHeight / 840000); // Sha1coin: 840k blocks in ~4 years
 
