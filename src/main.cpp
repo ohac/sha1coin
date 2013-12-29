@@ -31,7 +31,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0xa1e3016da48460f87073908ade2f80f71e154b6eeeaf7780143abed294ca0777");
+uint256 hashGenesisBlock("0xb394336b1e5a1134e264265df4955896fcc1b22276e7fa084017ad526f38bf43");
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Sha1coin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -2738,15 +2738,8 @@ bool InitBlockIndex() {
 
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
-        // Genesis Block:
-        // CBlock(hash=12a765e31ffd4059bada, PoW=0000050c34a64b415b6b, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=97ddfbbae6, nTime=1317972665, nBits=1e0ffff0, nNonce=2084524493, vtx=1)
-        //   CTransaction(hash=97ddfbbae6, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d0104404e592054696d65732030352f4f63742f32303131205374657665204a6f62732c204170706c65e280997320566973696f6e6172792c2044696573206174203536)
-        //     CTxOut(nValue=50.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-        //   vMerkleTree: 97ddfbbae6
-
         // Genesis block
-        const char* pszTimestamp = "NY Times 05/Oct/2011 Steve Jobs, Apple’s Visionary, Dies at 56";
+        const char* pszTimestamp = "NY Times 27/Dec/2013 Judge Upholds N.S.A.’s Bulk Collection of Data on Calls";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2758,18 +2751,17 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1317972665;
+        block.nTime    = 1388281107;
         block.nBits    = 0x1e0ffff0;
-#if 0
-        block.nNonce   = 1821051;
+#if 1
+        block.nNonce   = 1110492;
 #else
         uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-        for (int nn = 1800000;; nn++) {
+        for (int nn = 0;; nn++) {
             block.nNonce = nn;
             uint256 hash = block.GetPoWHash();
             if (hash > hashTarget) continue;
             printf("proof-of-work found\n  nn: %d\n  hash: %s  \ntarget: %s\n", nn, hash.GetHex().c_str(), hashTarget.GetHex().c_str());
-//          exit(0);
             break;
         }
 #endif
@@ -2785,7 +2777,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        assert(block.hashMerkleRoot == uint256("0x391cd45196d50430a8aa274b17cd6394c0db36fbfc700db9dbd1e1069ce15137"));
         block.print();
         assert(hash == hashGenesisBlock);
 
