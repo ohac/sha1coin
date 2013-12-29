@@ -24,6 +24,7 @@ Dependencies
  libssl      SSL Support       Secure communications
  libdb4.8    Berkeley DB       Blockchain & wallet storage
  libboost    Boost             C++ Library
+ libb64      Base64 Support    Base64 string for PoW
  miniupnpc   UPnP Support      Optional firewall-jumping support
 
 [miniupnpc](http://miniupnp.free.fr/) may be used for UPnP port mapping.  It can be downloaded from [here](
