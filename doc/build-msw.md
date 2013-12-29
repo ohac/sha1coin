@@ -80,10 +80,10 @@ MSYS shell:
 	mkdir miniupnpc
 	cp *.h miniupnpc/
 
-Litecoin
+Sha1coin
 -------
 DOS prompt:
 
-	cd \litecoin\src
+	cd \sha1coin\src
 	mingw32-make -f makefile.mingw
-	strip litecoind.exe
+	strip sha1coind.exe
