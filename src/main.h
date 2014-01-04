@@ -12,7 +12,6 @@
 #include "scrypt.h"
 
 #include <list>
-#include <b64/encode.h>
 
 class CWallet;
 class CBlock;
@@ -1340,9 +1339,9 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend,
     uint160 hash1 = 0;
     SHA1((pbegin == pend ? pblank : (unsigned char*)&pbegin[0]),
             (pend - pbegin) * sizeof(pbegin[0]), (unsigned char*)&hash1);
-    base64::encoder enc;
+    std::string str = EncodeBase64((const unsigned char *)hash1.begin(), hash1.size());
     char output[38]; // 26 + 11 + 1
-    enc.encode((const char *)hash1.begin(), hash1.size(), output);
+    memcpy(output, str.c_str(), 26);
     memcpy(&output[26], output, 11);
     output[37] = 0;
     uint256 hash3 = 0;
@@ -1353,9 +1352,9 @@ inline uint256 Hash1(const T1 pbegin, const T1 pend,
         if (find) {
             // 2ch trip finder
             char output2[12 + 1] = "";
-            base64::encoder enc2;
             hash2 <<= 96;
-            enc2.encode((const char *)hash2.begin() + 12, 9, output2);
+            str = EncodeBase64((const unsigned char *)hash2.begin() + 12, 9);
+            memcpy(output2, str.c_str(), 12);
             if (memcmp(output2, trip, triplen) == 0) {
                 char tripkey[13] = "";
                 memcpy(tripkey, &output[i], 12);
