@@ -1231,19 +1231,9 @@ void ThreadDNSAddressSeed()
     printf("%d addresses found from DNS seeds\n", found);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 unsigned int pnSeed[] =
 {
+    0x99840224, // 36.2.132.153
 };
 
 void DumpAddresses()
