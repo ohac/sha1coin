@@ -4590,8 +4590,9 @@ void static Sha1coinMiner(CWallet *pwallet)
             uint256 thash;
             loop
             {
+                const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : "sha1";
                 thash = Hash1(BEGIN(pblock->nVersion), END(pblock->nNonce),
-                        true, "sha1", 4); // for example
+                        true, trip, strlen(trip));
                 if (thash <= hashTarget)
                 {
                     // Found a solution
