@@ -164,6 +164,6 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [sha1coin-20140111-19.tar.gz-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coin-20140111-19.tar.gz
 [したらば掲示板交換]: http://jbbs.shitaraba.net/bbs/read.cgi/internet/19552/1388817096/l50
 [したらば掲示板]: http://jbbs.shitaraba.net/internet/19552/
-[外部Wiki1]: http://www59.atwiki.jp/japancryptocurrency/pages/15.html
+[外部Wiki1]: http://www59.atwiki.jp/japancryptocurrency/pages/18.html
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
