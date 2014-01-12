@@ -87,23 +87,11 @@ debug.logは一定時間が経過すると古いものから削除されるの�
 debug.logの場所はWindowsの場合、C:\Users\ユーザー名\AppData\Roaming\Sha1coin となります。
 Linuxの場合は/home/ユーザー名/.sha1coinです。
 
-## Sha1coinの入手(準備中)
+## コインの入手方法(準備中)
 
 ## 外部の交換所(Exchange)
 
 * [したらば掲示板交換]
-
-## sakuracoin.conf 設定例
-
-    rpcuser=user
-    rpcpassword=pass
-    addnode=36.2.132.153:9301
-
-非効率ではありますが、採掘する場合はgen=1をつけるお気軽な方法があります。
-
-    gen=1
-
-効率を求めるならcpuminerやcgminer, cudaminer等を使ってください。
 
 ## 仕様
 
