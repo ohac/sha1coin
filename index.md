@@ -35,17 +35,13 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 
 Windows用のクライアントソフト
 
-* [sha1coin-win32-setup-20140111-18.exe] Windows用インストーラ版
-* [sha1coin-win32-setup-20140111-18.exe-mirror] Windows用インストーラ版(Mirror)
-* [sha1coin-qt-20140111-18.exe] Windows用スタンドアローン版
-* [sha1coin-qt-20140111-18.exe-mirror] Windows用スタンドアローン版(Mirror)
-* [sha1coind-20140111-18.exe] Windows用コンソール版
-* [sha1coind-20140111-18.exe-mirror] Windows用コンソール版(Mirror)
+* [sha1coin-win32-setup-20140112-12.exe] Windows用インストーラ版
+* [sha1coin-qt-20140112-12.exe] Windows用スタンドアローン版
+* [sha1coind-20140112-12.exe] Windows用コンソール版
 
 Linux用のクライアントソフト
 
-* [sha1coin-20140111-19.tar.gz] Linux用
-* [sha1coin-20140111-19.tar.gz-mirror] Linux用(Mirror)
+* [sha1coin-20140112-12.tar.gz] Linux用
 
 Mac OSX用のクライアントソフト
 
@@ -132,17 +128,21 @@ PoW以外はほぼLitecoinと同じ。
 このページは開発者のみ編集可能に設定しておりますので、ダウンロードのURLは他の人は改ざんできません。
 URLはohacのge.ttとDropboxアカウントを使用しておりますので、こちらも改ざんできませんが、念のためmd5sumを付けておきます。
 
+    d57edc0bcf9da6f1c97616c215e9a8ff *sha1coin-win32-setup-20140112-12.exe
+    48a7a78e64b7ef7a2d4f83a923ae2254 *sha1coin-qt-20140112-12.exe
+    2decf76ab926558148a3495b5c9d821a *sha1coind-20140112-12.exe
+    dbe41e086ca6e4b2ae664dddd6c17515 *sha1coin-20140112-12.tar.gz
     55a61d57f60c22677ed7a3dd5806e370 *sha1coin-win32-setup-20140111-18.exe
     52623d350fa82e3cb3dee8215e07bfae *sha1coin-qt-20140111-18.exe
     53595757fe563b8348f6f8b609758cfd *sha1coind-20140111-18.exe
     a12774e919942921d6d1ff49252eafa3 *sha1coin-20140111-19.tar.gz
-    f1eb58a3c45c47d5407fd6cf5e3c4576 *sha1coin-20140105-13-win32-setup.exe
-    242f14656e82a47ae0fd29cae17f2b1d *sha1coin-20140104-16-win32-setup.exe
 
 ## 旧バージョンのダウンロード
 
-* https://dl.dropboxusercontent.com/u/5745602/sha1coin-20140105-13-win32-setup.exe
-* https://dl.dropboxusercontent.com/u/5745602/sha1coin-20140104-16-win32-setup.exe
+* [sha1coin-win32-setup-20140111-18.exe]
+* [sha1coin-qt-20140111-18.exe]
+* [sha1coind-20140111-18.exe]
+* [sha1coin-20140111-19.tar.gz]
 
 ## 寄付
 
@@ -154,6 +154,10 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [Donate-MONA]: monacoin:MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY
 [Bitmessage]: https://bitmessage.ch/
 [Sha1coin]: http://ohac.github.io/sha1coin/
+[sha1coin-win32-setup-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/0?c
+[sha1coin-qt-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/1?c
+[sha1coind-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/2?c
+[sha1coin-20140112-12.tar.gz]: http://ge.tt/2SxtVoD1/v/3?c
 [sha1coin-win32-setup-20140111-18.exe]: http://ge.tt/5Un3BkD1/v/0?c
 [sha1coin-win32-setup-20140111-18.exe-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coin-win32-setup-20140111-18.exe
 [sha1coin-qt-20140111-18.exe]: http://ge.tt/31nu4lD1/v/5?c
