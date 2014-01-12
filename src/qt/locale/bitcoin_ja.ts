@@ -15,7 +15,7 @@
     <message>
         <location line="+57"/>
         <source>
-This is experimental software.
+これは実験的なソフトウェアです。
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -58,7 +58,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-11"/>
         <source>&amp;New Address</source>
-        <translation type="unfinished"/>
+        <translation>新しいアドレス(&amp;N)</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
@@ -68,12 +68,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
         <source>&amp;Copy Address</source>
-        <translation type="unfinished"/>
+        <translation>アドレスのコピー(&amp;C)</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Show &amp;QR Code</source>
-        <translation type="unfinished"/>
+        <translation>QRコードの表示(&amp;Q)</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -83,12 +83,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>Sign &amp;Message</source>
-        <translation type="unfinished"/>
+        <translation>メッセージへの署名(&amp;M)</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation>現在選択されているアドレスをリストから削除する</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -98,7 +98,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>エクスポート(&amp;E)</translation>
     </message>
     <message>
         <location line="-44"/>
@@ -108,7 +108,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+3"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
+        <translation>メッセージの署名確認(&amp;V)</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -123,17 +123,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+13"/>
         <source>Copy &amp;Label</source>
-        <translation type="unfinished"/>
+        <translation>ラベルのコピー(&amp;L)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"/>
+        <translation>編集(&amp;E)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Send &amp;Coins</source>
-        <translation type="unfinished"/>
+        <translation>コインを送る(&amp;C)</translation>
     </message>
     <message>
         <location line="+260"/>
@@ -179,7 +179,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
         <source>Passphrase Dialog</source>
-        <translation type="unfinished"/>
+        <translation>パスフレーズダイアログ</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -312,7 +312,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+14"/>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットのパスフレーズ変更は成功しました。</translation>
     </message>
 </context>
 <context>
@@ -320,7 +320,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../bitcoingui.cpp" line="+233"/>
         <source>Sign &amp;message...</source>
-        <translation type="unfinished"/>
+        <translation>メッセージへの署名(&amp;M)...</translation>
     </message>
     <message>
         <location line="+280"/>
@@ -360,7 +360,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+31"/>
         <source>E&amp;xit</source>
-        <translation type="unfinished"/>
+        <translation>終了(&amp;X)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -375,37 +375,37 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+2"/>
         <source>About &amp;Qt</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Qtについて</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show information about Qt</source>
-        <translation type="unfinished"/>
+        <translation>Qtについての情報を見る</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Options...</source>
-        <translation>オプション(&amp;O)</translation>
+        <translation>オプション(&amp;O)...</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Encrypt Wallet...</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットの暗号化(&amp;E)...</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Backup Wallet...</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットのバックアップ(&amp;B)...</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>&amp;Change Passphrase...</source>
-        <translation type="unfinished"/>
+        <translation>パスフレーズの変更(&amp;C)...</translation>
     </message>
     <message>
         <location line="+285"/>
         <source>Importing blocks from disk...</source>
-        <translation type="unfinished"/>
+        <translation>ディスクからブロックをインポートする...</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -415,37 +415,37 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-347"/>
         <source>Send coins to a Sha1coin address</source>
-        <translation type="unfinished"/>
+        <translation>Sha1coinのアドレスへコインを送る</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Sha1coin</source>
-        <translation type="unfinished"/>
+        <translation>Sha1coinの設定オプションを変更する</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Backup wallet to another location</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットを別の場所へバックアップする</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Change the passphrase used for wallet encryption</source>
-        <translation>ウォレット暗号化用パスフレーズの変更</translation>
+        <translation>暗号化用パスフレーズの変更</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>&amp;Debug window</source>
-        <translation type="unfinished"/>
+        <translation>デバッグウィンドウ(&amp;D)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Open debugging and diagnostic console</source>
-        <translation type="unfinished"/>
+        <translation>デバッグと通知コンソールを開く</translation>
     </message>
     <message>
         <location line="-4"/>
         <source>&amp;Verify message...</source>
-        <translation type="unfinished"/>
+        <translation>メッセージの署名確認(&amp;V)...</translation>
     </message>
     <message>
         <location line="-165"/>
@@ -456,37 +456,37 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-530"/>
         <source>Wallet</source>
-        <translation type="unfinished"/>
+        <translation>ウォレット</translation>
     </message>
     <message>
         <location line="+101"/>
         <source>&amp;Send</source>
-        <translation type="unfinished"/>
+        <translation>送る(&amp;S)</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation type="unfinished"/>
+        <translation>受け取る(&amp;R)</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>&amp;Addresses</source>
-        <translation type="unfinished"/>
+        <translation>アドレス(&amp;A)</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>&amp;About Sha1coin</source>
-        <translation type="unfinished"/>
+        <translation>Sha1coinについて(&amp;A)</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>&amp;Show / Hide</source>
-        <translation type="unfinished"/>
+        <translation>表示 / 隠す(&amp;S)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation type="unfinished"/>
+        <translation>メインウィンドウの表示または隠す</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -532,22 +532,24 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+47"/>
         <source>Sha1coin client</source>
-        <translation type="unfinished"/>
+        <translation>Sha1coinクライアント</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to Sha1coin network</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation>
+            <numerusform>Sha1coinネットワークへのアクティブなコネクション数: %n</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+22"/>
         <source>No block source available...</source>
-        <translation type="unfinished"/>
+        <translation>ブロックが見つかりません...</translation>
     </message>
     <message>
         <location line="+12"/>
         <source>Processed %1 of %2 (estimated) blocks of transaction history.</source>
-        <translation type="unfinished"/>
+        <translation>%2の処理された%1の取引履歴のブロック（推定）。</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -557,22 +559,28 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+20"/>
         <source>%n hour(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation>
+            <numerusform>%n時間</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation>
+            <numerusform>%n日</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n week(s)</source>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation>
+            <numerusform>%n週間</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
         <source>%1 behind</source>
-        <translation type="unfinished"/>
+        <translation>%1前の状態</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -587,17 +595,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+22"/>
         <source>Error</source>
-        <translation type="unfinished"/>
+        <translation>エラー</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation>警告</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Information</source>
-        <translation type="unfinished"/>
+        <translation>情報</translation>
     </message>
     <message>
         <location line="+70"/>
@@ -612,12 +620,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+31"/>
         <source>Catching up...</source>
-        <translation type="unfinished"/>
+        <translation>キャッチアップ...</translation>
     </message>
     <message>
         <location line="+113"/>
         <source>Confirm transaction fee</source>
-        <translation type="unfinished"/>
+        <translation>取引手数料の確認</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -636,7 +644,11 @@ Amount: %2
 Type: %3
 Address: %4
 </source>
-        <translation type="unfinished"/>
+        <translation>日付: %1
+残高: %2
+タイプ: %3
+アドレス: %4
+</translation>
     </message>
     <message>
         <location line="+33"/>
@@ -671,7 +683,7 @@ Address: %4
     <message>
         <location filename="../clientmodel.cpp" line="+104"/>
         <source>Network Alert</source>
-        <translation type="unfinished"/>
+        <translation>ネットワーク警告</translation>
     </message>
 </context>
 <context>
@@ -694,7 +706,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>&amp;Address</source>
-        <translation>&amp;アドレス</translation>
+        <translation>アドレス(&amp;A)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -729,12 +741,12 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Sha1coin address.</source>
-        <translation type="unfinished"/>
+        <translation>入力したアドレス「%1」は正しいSha1coinアドレスではありません。</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>Could not unlock wallet.</source>
-        <translation>財布をアンロックするのは出来ませんでした。</translation>
+        <translation>ウォレットをアンロックするのは出来ませんでした。</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -753,22 +765,22 @@ Address: %4
     <message>
         <location line="-12"/>
         <source>version</source>
-        <translation type="unfinished"/>
+        <translation>バージョン</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Usage:</source>
-        <translation type="unfinished"/>
+        <translation>使い方:</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>command-line options</source>
-        <translation type="unfinished"/>
+        <translation>コマンドラインオプション</translation>
     </message>
     <message>
         <location line="+4"/>
         <source>UI options</source>
-        <translation type="unfinished"/>
+        <translation>UIオプション</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -778,12 +790,12 @@ Address: %4
     <message>
         <location line="+1"/>
         <source>Start minimized</source>
-        <translation type="unfinished"/>
+        <translation>最小化して起動</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Show splash screen on startup (default: 1)</source>
-        <translation type="unfinished"/>
+        <translation>起動時のスプラッシュスクリーンの表示 (デフォルト: 1)</translation>
     </message>
 </context>
 <context>
@@ -791,32 +803,32 @@ Address: %4
     <message>
         <location filename="../forms/optionsdialog.ui" line="+14"/>
         <source>Options</source>
-        <translation>オプションズ</translation>
+        <translation>オプション</translation>
     </message>
     <message>
         <location line="+16"/>
         <source>&amp;Main</source>
-        <translation type="unfinished"/>
+        <translation>メイン(&amp;M)</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
-        <translation type="unfinished"/>
+        <translation>取引1kBあたりの手数料。取引を優先的に処理したい場合に指定してください。ほとんどの取引は1kBに収まります。</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>Pay transaction &amp;fee</source>
-        <translation type="unfinished"/>
+        <translation>取引手数料の支払い(&amp;F)</translation>
     </message>
     <message>
         <location line="+31"/>
         <source>Automatically start Sha1coin after logging in to the system.</source>
-        <translation type="unfinished"/>
+        <translation>立ち上げ時にSha1coinを自動的に実行します。</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Sha1coin on system login</source>
-        <translation type="unfinished"/>
+        <translation>Sha1coinを自動的に実行(&amp;S)</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -831,7 +843,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>&amp;Network</source>
-        <translation type="unfinished"/>
+        <translation>ネットワーク(&amp;N)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -886,7 +898,7 @@ Address: %4
     <message>
         <location line="+36"/>
         <source>&amp;Window</source>
-        <translation type="unfinished"/>
+        <translation>ウィンドウ(&amp;W)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -911,7 +923,7 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>&amp;Display</source>
-        <translation type="unfinished"/>
+        <translation>ディスプレイ(&amp;D)</translation>
     </message>
     <message>
         <location line="+8"/>
@@ -946,22 +958,22 @@ Address: %4
     <message>
         <location line="+71"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>&amp;OK</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cancel</translation>
     </message>
     <message>
         <location line="+10"/>
         <source>&amp;Apply</source>
-        <translation type="unfinished"/>
+        <translation>適用(&amp;A)</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="+53"/>
         <source>default</source>
-        <translation type="unfinished"/>
+        <translation>デフォルト</translation>
     </message>
     <message>
         <location line="+130"/>
@@ -1012,27 +1024,27 @@ Address: %4
     <message>
         <location line="-124"/>
         <source>Balance:</source>
-        <translation>残高：</translation>
+        <translation>残高:</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Unconfirmed:</source>
-        <translation>未確認：</translation>
+        <translation>未確認:</translation>
     </message>
     <message>
         <location line="-78"/>
         <source>Wallet</source>
-        <translation type="unfinished"/>
+        <translation>ウォレット</translation>
     </message>
     <message>
         <location line="+107"/>
         <source>Immature:</source>
-        <translation type="unfinished"/>
+        <translation>未熟:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Mined balance that has not yet matured</source>
-        <translation type="unfinished"/>
+        <translation>まだ成熟していない採掘された残高</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -1053,7 +1065,7 @@ Address: %4
         <location filename="../overviewpage.cpp" line="+116"/>
         <location line="+1"/>
         <source>out of sync</source>
-        <translation type="unfinished"/>
+        <translation>非同期</translation>
     </message>
 </context>
 <context>
@@ -1069,7 +1081,7 @@ Address: %4
     <message>
         <location filename="../forms/qrcodedialog.ui" line="+14"/>
         <source>QR Code Dialog</source>
-        <translation type="unfinished"/>
+        <translation>QRコードダイアログ</translation>
     </message>
     <message>
         <location line="+59"/>
@@ -1286,12 +1298,12 @@ Address: %4
     <message>
         <location line="+50"/>
         <source>Send to multiple recipients at once</source>
-        <translation type="unfinished"/>
+        <translation>コインを複数の宛先に送る</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Add &amp;Recipient</source>
-        <translation type="unfinished"/>
+        <translation>支払先の追加(&amp;R)</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -1301,17 +1313,17 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Clear &amp;All</source>
-        <translation type="unfinished"/>
+        <translation>すべてクリア(&amp;A)</translation>
     </message>
     <message>
         <location line="+22"/>
         <source>Balance:</source>
-        <translation>残高：</translation>
+        <translation>残高:</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation type="unfinished"/>
+        <source>123.456 SKR</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1389,17 +1401,17 @@ Address: %4
     <message>
         <location line="+15"/>
         <source>A&amp;mount:</source>
-        <translation type="unfinished"/>
+        <translation>額(&amp;M):</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Pay &amp;To:</source>
-        <translation type="unfinished"/>
+        <translation>支払先(&amp;T):</translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation type="unfinished"/>
+        <source>The address to send the payment to (e.g. Ser4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>送金先のアドレス (例: Ser4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1410,7 +1422,7 @@ Address: %4
     <message>
         <location line="-78"/>
         <source>&amp;Label:</source>
-        <translation type="unfinished"/>
+        <translation>ラベル(&amp;L):</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -1453,7 +1465,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>&amp;Sign Message</source>
-        <translation type="unfinished"/>
+        <translation>メッセージへの署名(&amp;S)</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1462,7 +1474,7 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>The address to sign the message with (e.g. Ser4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1526,7 +1538,7 @@ Address: %4
     <message>
         <location line="-87"/>
         <source>&amp;Verify Message</source>
-        <translation type="unfinished"/>
+        <translation>メッセージの署名確認</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1641,7 +1653,7 @@ Address: %4
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
         <source>The Sha1coin developers</source>
-        <translation type="unfinished"/>
+        <translation>The Sha1coin developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1828,7 +1840,7 @@ Address: %4
     <message>
         <location filename="../forms/transactiondescdialog.ui" line="+14"/>
         <source>Transaction details</source>
-        <translation type="unfinished"/>
+        <translation>取引の詳細</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -1841,22 +1853,22 @@ Address: %4
     <message>
         <location filename="../transactiontablemodel.cpp" line="+225"/>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation>日付</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation>タイプ</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Address</source>
-        <translation>Helbidea</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Amount</source>
-        <translation type="unfinished"/>
+        <translation>額</translation>
     </message>
     <message numerus="yes">
         <location line="+57"/>
@@ -1901,7 +1913,7 @@ Address: %4
     <message>
         <location line="+43"/>
         <source>Received with</source>
-        <translation type="unfinished"/>
+        <translation>入金</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1911,7 +1923,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Sent to</source>
-        <translation type="unfinished"/>
+        <translation>送金</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -1921,7 +1933,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Mined</source>
-        <translation type="unfinished"/>
+        <translation>発掘</translation>
     </message>
     <message>
         <location line="+38"/>
@@ -2128,7 +2140,7 @@ Address: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation type="unfinished"/>
+        <translation>コインを送る</translation>
     </message>
 </context>
 <context>
@@ -2136,27 +2148,27 @@ Address: %4
     <message>
         <location filename="../walletview.cpp" line="+42"/>
         <source>&amp;Export</source>
-        <translation type="unfinished"/>
+        <translation>エクスポート(&amp;E)</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Export the data in the current tab to a file</source>
-        <translation type="unfinished"/>
+        <translation>現在のタブのデータをファイルへ保存する</translation>
     </message>
     <message>
         <location line="+193"/>
         <source>Backup Wallet</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットのバックアップ</translation>
     </message>
     <message>
         <location line="+0"/>
         <source>Wallet Data (*.dat)</source>
-        <translation type="unfinished"/>
+        <translation>ウォレットデータ (*.dat)</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Backup Failed</source>
-        <translation type="unfinished"/>
+        <translation>バックアップ失敗</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -2166,7 +2178,7 @@ Address: %4
     <message>
         <location line="+4"/>
         <source>Backup Successful</source>
-        <translation type="unfinished"/>
+        <translation>バックアップ成功</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -2179,12 +2191,12 @@ Address: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>Sha1coin version</source>
-        <translation>Sha1coin Bertsio</translation>
+        <translation>Sha1coinバージョン</translation>
     </message>
     <message>
         <location line="+102"/>
         <source>Usage:</source>
-        <translation type="unfinished"/>
+        <translation>使い方:</translation>
     </message>
     <message>
         <location line="-29"/>
@@ -2769,7 +2781,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Sha1coin Alert&quot; admin@foo
     <message>
         <location line="+165"/>
         <source>This help message</source>
-        <translation type="unfinished"/>
+        <translation>このヘルプメッセージ</translation>
     </message>
     <message>
         <location line="+6"/>
