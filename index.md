@@ -129,6 +129,10 @@ PoW以外はほぼLitecoinと同じ。
 * [したらば掲示板]
 * [外部Wiki1]
 
+## その他のコイン
+
+* [Sakuracoin]
+
 ## ダウンロードについて
 
 このページは開発者のみ編集可能に設定しておりますので、ダウンロードのURLは他の人は改ざんできません。
@@ -182,3 +186,4 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [外部Wiki1]: http://www59.atwiki.jp/japancryptocurrency/pages/18.html
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
+[Sakuracoin]: http://ohac.github.io/sakuracoin/
