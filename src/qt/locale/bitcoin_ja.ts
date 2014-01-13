@@ -330,7 +330,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-349"/>
         <source>&amp;Overview</source>
-        <translation>概要(&amp;O)</translation>
+        <translation>概要</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -340,7 +340,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+20"/>
         <source>&amp;Transactions</source>
-        <translation>取引(&amp;T)</translation>
+        <translation>取引</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -461,17 +461,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+101"/>
         <source>&amp;Send</source>
-        <translation>送る(&amp;S)</translation>
+        <translation>送る</translation>
     </message>
     <message>
         <location line="+7"/>
         <source>&amp;Receive</source>
-        <translation>受け取る(&amp;R)</translation>
+        <translation>受け取る</translation>
     </message>
     <message>
         <location line="+14"/>
         <source>&amp;Addresses</source>
-        <translation>アドレス(&amp;A)</translation>
+        <translation>アドレス</translation>
     </message>
     <message>
         <location line="+22"/>
