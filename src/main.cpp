@@ -4535,11 +4535,71 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     return true;
 }
 
+static void encodeb64chunk(const unsigned char* pch, char* buff)
+{
+    const char *pbase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    int mode = 0, left = 0;
+    const int len = 3;
+    const unsigned char *pchEnd = pch + len;
+    while (pch < pchEnd) {
+      int enc = *(pch++);
+      if (mode == 0) {
+        *buff++ = pbase64[enc >> 2];
+        left = (enc & 3) << 4;
+        mode = 1;
+      }
+      else if (mode == 1) {
+        *buff++ = pbase64[left | (enc >> 4)];
+        left = (enc & 15) << 2;
+        mode = 2;
+      }
+      else {
+        *buff++ = pbase64[left | (enc >> 6)];
+        *buff++ = pbase64[enc & 63];
+        mode = 0;
+      }
+   }
+}
+
+static unsigned short b64tbl1[0x10000];
+static unsigned short b64tbl2[0x10000];
+
+static void genb64tbl()
+{
+    unsigned char in[4] = "";
+    unsigned char out[8] = "";
+    for (int i = 0; i < 0x10000; i++) {
+        in[0] = i & 0xff;
+        in[1] = i >> 8;
+        in[2] = 0;
+        encodeb64chunk(in, (char *)out);
+        b64tbl1[i] = out[0] | (out[1] << 8);
+        in[0] = 0;
+        in[1] = i & 0xff;
+        in[2] = i >> 8;
+        encodeb64chunk(in, (char *)out);
+        b64tbl2[i] = out[2] | (out[3] << 8);
+    }
+}
+
+static void encodeb64wide(const unsigned char* pch, unsigned short* buff)
+{
+    unsigned short sv;
+    for (int i = 0; i < 7; i++) {
+      sv = pch[0] | (pch[1] << 8);
+      *buff++ = b64tbl1[sv];
+      sv = pch[1] | (pch[2] << 8);
+      *buff++ = b64tbl2[sv];
+      pch += 3;
+    }
+}
+
 void static Sha1coinMiner(CWallet *pwallet)
 {
     printf("Sha1coinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("sha1coin-miner");
+    genb64tbl();
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4590,9 +4650,31 @@ void static Sha1coinMiner(CWallet *pwallet)
             uint256 thash;
             loop
             {
+#define NEWMINER
+#if defined(NEWMINER)
+                uint32_t prehash[5] __attribute__((aligned(32)));
+                char str[38] __attribute__((aligned(32))); // 26 + 11 + 1
+                uint32_t hash[5] __attribute__((aligned(32))) = { 0 };
+                uint32_t hash7;
+                SHA1((const unsigned char *)BEGIN(pblock->nVersion), 20 * 4, (unsigned char *)prehash);
+                encodeb64wide((const unsigned char *)prehash, (unsigned short *)str);
+                memcpy(&str[26], str, 11);
+                for (int i = 0; i < 26; i++) {
+                    SHA1((const unsigned char *)&str[i], 12, (unsigned char *)prehash);
+                    hash[0] ^= prehash[0];
+                    hash[1] ^= prehash[1];
+                    hash[2] ^= prehash[2];
+                    hash[3] ^= prehash[3];
+                    hash[4] ^= prehash[4];
+                }
+                hash7 = hash[4];
+                if (!(hash7 & 0xffffc00)) {
+                    memcpy((void *)&thash, hash, 20);
+#else
                 const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : "sha1";
                 thash = Hash1(BEGIN(pblock->nVersion), END(pblock->nNonce),
                         true, trip, strlen(trip));
+#endif
                 if (thash <= hashTarget)
                 {
                     // Found a solution
@@ -4601,6 +4683,9 @@ void static Sha1coinMiner(CWallet *pwallet)
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
                     break;
                 }
+#if defined(NEWMINER)
+                }
+#endif
                 pblock->nNonce += 1;
                 nHashesDone += 1;
                 if ((pblock->nNonce & 0xFF) == 0)
