@@ -4542,23 +4542,23 @@ static void encodeb64chunk(const unsigned char* pch, char* buff)
     const int len = 3;
     const unsigned char *pchEnd = pch + len;
     while (pch < pchEnd) {
-      int enc = *(pch++);
-      if (mode == 0) {
-        *buff++ = pbase64[enc >> 2];
-        left = (enc & 3) << 4;
-        mode = 1;
-      }
-      else if (mode == 1) {
-        *buff++ = pbase64[left | (enc >> 4)];
-        left = (enc & 15) << 2;
-        mode = 2;
-      }
-      else {
-        *buff++ = pbase64[left | (enc >> 6)];
-        *buff++ = pbase64[enc & 63];
-        mode = 0;
-      }
-   }
+        int enc = *(pch++);
+        if (mode == 0) {
+            *buff++ = pbase64[enc >> 2];
+            left = (enc & 3) << 4;
+            mode = 1;
+        }
+        else if (mode == 1) {
+            *buff++ = pbase64[left | (enc >> 4)];
+            left = (enc & 15) << 2;
+            mode = 2;
+        }
+        else {
+            *buff++ = pbase64[left | (enc >> 6)];
+            *buff++ = pbase64[enc & 63];
+            mode = 0;
+        }
+    }
 }
 
 static unsigned short b64tbl1[0x10000];
@@ -4586,11 +4586,11 @@ static void encodeb64wide(const unsigned char* pch, unsigned short* buff)
 {
     unsigned short sv;
     for (int i = 0; i < 7; i++) {
-      sv = pch[0] | (pch[1] << 8);
-      *buff++ = b64tbl1[sv];
-      sv = pch[1] | (pch[2] << 8);
-      *buff++ = b64tbl2[sv];
-      pch += 3;
+        sv = pch[0] | (pch[1] << 8);
+        *buff++ = b64tbl1[sv];
+        sv = pch[1] | (pch[2] << 8);
+        *buff++ = b64tbl2[sv];
+        pch += 3;
     }
 }
 
