@@ -4600,6 +4600,8 @@ void static Sha1coinMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("sha1coin-miner");
     genb64tbl();
+    const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : NULL;
+    const int triplen = trip == NULL ? 0 : strlen(trip);
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4656,11 +4658,21 @@ void static Sha1coinMiner(CWallet *pwallet)
                 char str[38] __attribute__((aligned(32))); // 26 + 11 + 1
                 uint32_t hash[5] __attribute__((aligned(32))) = { 0 };
                 uint32_t hash7;
+                char output2[12 + 1] = "";
                 SHA1((const unsigned char *)BEGIN(pblock->nVersion), 20 * 4, (unsigned char *)prehash);
                 encodeb64wide((const unsigned char *)prehash, (unsigned short *)str);
                 memcpy(&str[26], str, 11);
                 for (int i = 0; i < 26; i++) {
                     SHA1((const unsigned char *)&str[i], 12, (unsigned char *)prehash);
+                    if (trip != NULL) {
+                        std::string str2 = EncodeBase64((const unsigned char *)prehash, 9);
+                        memcpy(output2, str2.c_str(), 12);
+                        if (memcmp(output2, trip, triplen) == 0) {
+                            char tripkey[13] = "";
+                            memcpy(tripkey, &str[i], 12);
+                            printf("tripkey: #%s, trip: %s\n", tripkey, output2);
+                        }
+                    }
                     hash[0] ^= prehash[0];
                     hash[1] ^= prehash[1];
                     hash[2] ^= prehash[2];
@@ -4671,9 +4683,8 @@ void static Sha1coinMiner(CWallet *pwallet)
                 if (!(hash7 & 0xffffc00)) {
                     memcpy((void *)&thash, hash, 20);
 #else
-                const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : "sha1";
                 thash = Hash1(BEGIN(pblock->nVersion), END(pblock->nNonce),
-                        true, trip, strlen(trip));
+                        trip != NULL, trip, triplen);
 #endif
                 if (thash <= hashTarget)
                 {
