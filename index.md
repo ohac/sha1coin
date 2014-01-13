@@ -33,24 +33,30 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 
 ## ダウンロード
 
-Windows用のクライアントソフト
+[ここからダウンロード]してください。(2014/01/13 16:00バージョン)
+寄付をいただけると私が喜びます。少額でもうれしいです。
 
-* [sha1coin-win32-setup-20140112-12.exe] Windows用インストーラ版
-* [sha1coin-qt-20140112-12.exe] Windows用スタンドアローン版
-* [sha1coind-20140112-12.exe] Windows用コンソール版
+[Donate-SKR], [Donate-SHA], [Donate-MONA]
 
-Linux用のクライアントソフト
+* Windows用
+  * sha1coin-win32-setup-20140113-16.exe インストーラ版
+  * sha1coin-qt-20140113-16.exe スタンドアローン版
+  * sha1coind-20140113-16.exe コンソール版
+* Linux用
+  * sha1coin-20140113-16.tar.gz
+* Mac OSX用
+  * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
-* [sha1coin-20140112-12.tar.gz] Linux用
+ソースコードはGitHubのohac/[sha1coin]にあります。
 
-Mac OSX用のクライアントソフト
+## 変更履歴
 
-* なし
-  * 作成する環境を持っていないので、どなたかご協力いただければ助かります。
-
-ソースコード
-
-* [sha1coin]
+* 20140113-16
+  * [sha1coin-cpuminer]のコードを取り込み、採掘/トリップ検索速度を向上
+  * タスクバーのアイコン修正
+  * about.pngを更新(したらば掲示板でいただいたもの)
+  * ツールバーのショートカットキーが機能していないので削除
+  * インストーラのイメージを修正
 
 ## 採掘手順
 
@@ -128,6 +134,10 @@ PoW以外はほぼLitecoinと同じ。
 このページは開発者のみ編集可能に設定しておりますので、ダウンロードのURLは他の人は改ざんできません。
 URLはohacのge.ttとDropboxアカウントを使用しておりますので、こちらも改ざんできませんが、念のためmd5sumを付けておきます。
 
+    609ef8426b3fd11d9fc8bb8a9d830f5d *sha1coin-win32-setup-20140113-16.exe
+    bc26d0a7e12bef157ffc837460f953cb *sha1coin-qt-20140113-16.exe
+    8f622b7ce26a5e2b71418ace21237b34 *sha1coind-20140113-16.exe
+    979de2a135bd302f87e8dea876998e3e *sha1coin-20140113-16.tar.gz
     d57edc0bcf9da6f1c97616c215e9a8ff *sha1coin-win32-setup-20140112-12.exe
     48a7a78e64b7ef7a2d4f83a923ae2254 *sha1coin-qt-20140112-12.exe
     2decf76ab926558148a3495b5c9d821a *sha1coind-20140112-12.exe
@@ -154,6 +164,7 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [Donate-MONA]: monacoin:MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY
 [Bitmessage]: https://bitmessage.ch/
 [Sha1coin]: http://ohac.github.io/sha1coin/
+[ここからダウンロード]: http://ge.tt/5uQLBwD1?c
 [sha1coin-win32-setup-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/0?c
 [sha1coin-qt-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/1?c
 [sha1coind-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/2?c
