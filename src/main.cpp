@@ -4594,6 +4594,31 @@ static void encodeb64wide(const unsigned char* pch, unsigned short* buff)
     }
 }
 
+static inline void be32enc(void *pp, uint32_t x)
+{
+    uint8_t *p = (uint8_t *)pp;
+    p[3] = x & 0xff;
+    p[2] = (x >> 8) & 0xff;
+    p[1] = (x >> 16) & 0xff;
+    p[0] = (x >> 24) & 0xff;
+}
+
+uint32_t decodeb64chunk(const char* str)
+{
+    unsigned int dec = 0;
+    const char *pbase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    for (int i = 0; i < 4; i++)
+    {
+        char* pos = strchr((char *)pbase64, str[i]);
+        int v = (int)(pos - pbase64);
+        dec = (dec << 6) | v;
+    }
+    dec <<= 8;
+    uint32_t result = 0;
+    be32enc(&result, dec);
+    return result;
+}
+
 void static Sha1coinMiner(CWallet *pwallet)
 {
     printf("Sha1coinMiner started\n");
@@ -4602,6 +4627,7 @@ void static Sha1coinMiner(CWallet *pwallet)
     genb64tbl();
     const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : NULL;
     const int triplen = trip == NULL ? 0 : strlen(trip);
+    uint32_t searchchunk = decodeb64chunk(trip) & 0x00ffffff;
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4662,7 +4688,7 @@ void static Sha1coinMiner(CWallet *pwallet)
                 memcpy(&str[26], str, 11);
                 for (int i = 0; i < 26; i++) {
                     SHA1((const unsigned char *)&str[i], 12, (unsigned char *)prehash);
-                    if (trip != NULL) {
+                    if (trip != NULL && (prehash[0] & 0x00ffffff) == searchchunk) {
                         std::string str2 = EncodeBase64((const unsigned char *)prehash, 9);
                         memcpy(output2, str2.c_str(), 12);
                         if (memcmp(output2, trip, triplen) == 0) {
