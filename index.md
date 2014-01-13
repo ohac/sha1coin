@@ -71,6 +71,7 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
     rpcpassword=pass
     addnode=36.2.132.153:9513
     trip=mona
+    shrinkdebugfile=0
 
 非効率ではありますが、起動直後から採掘する場合はgen=1をつける方法があります。プロセス数はgenproclimitで指定可能です。
 
@@ -85,7 +86,7 @@ sha1coin.confのtripで指定した文字列が発見されると、debug.logに
 
     2014-01-05 04:54:36 tripkey: #ApUVWry4ykk7, trip: monaQdPk/6d2
 
-debug.logは一定時間が経過すると古いものから削除されるのでご注意ください。
+初期設定ではdebug.logは一定時間が経過すると古いものから削除されるのでご注意ください。sha1coin.confにshrinkdebugfile=0を指定すると削除されなくなります。
 debug.logの場所はWindowsの場合、C:\Users\ユーザー名\AppData\Roaming\Sha1coin となります。
 Linuxの場合は/home/ユーザー名/.sha1coinです。
 
