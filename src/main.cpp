@@ -4652,8 +4652,6 @@ void static Sha1coinMiner(CWallet *pwallet)
             uint256 thash;
             loop
             {
-#define NEWMINER
-#if defined(NEWMINER)
                 uint32_t prehash[5] __attribute__((aligned(32)));
                 char str[38] __attribute__((aligned(32))); // 26 + 11 + 1
                 uint32_t hash[5] __attribute__((aligned(32))) = { 0 };
@@ -4682,21 +4680,15 @@ void static Sha1coinMiner(CWallet *pwallet)
                 hash7 = hash[4];
                 if (!(hash7 & 0xffffc00)) {
                     memcpy((void *)&thash, hash, 20);
-#else
-                thash = Hash1(BEGIN(pblock->nVersion), END(pblock->nNonce),
-                        trip != NULL, trip, triplen);
-#endif
-                if (thash <= hashTarget)
-                {
-                    // Found a solution
-                    SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    CheckWork(pblock, *pwallet, reservekey);
-                    SetThreadPriority(THREAD_PRIORITY_LOWEST);
-                    break;
+                    if (thash <= hashTarget)
+                    {
+                        // Found a solution
+                        SetThreadPriority(THREAD_PRIORITY_NORMAL);
+                        CheckWork(pblock, *pwallet, reservekey);
+                        SetThreadPriority(THREAD_PRIORITY_LOWEST);
+                        break;
+                    }
                 }
-#if defined(NEWMINER)
-                }
-#endif
                 pblock->nNonce += 1;
                 nHashesDone += 1;
                 if ((pblock->nNonce & 0xFF) == 0)
