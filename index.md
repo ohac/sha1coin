@@ -33,17 +33,17 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 
 ## ダウンロード
 
-[ここからダウンロード]してください。(2014/01/13 16:00バージョン)
+[ここからダウンロード]してください。(2014/01/14 23:00バージョン)
 寄付をいただけると私が喜びます。少額でもうれしいです。
 
 [Donate-SKR], [Donate-SHA], [Donate-MONA]
 
 * Windows用
-  * sha1coin-win32-setup-20140113-16.exe インストーラ版
-  * sha1coin-qt-20140113-16.exe スタンドアローン版
-  * sha1coind-20140113-16.exe コンソール版
+  * sha1coin-win32-setup-20140114-23.exe インストーラ版
+  * sha1coin-qt-20140114-23.exe スタンドアローン版
+  * sha1coind-20140114-23.exe コンソール版
 * Linux用
-  * sha1coin-20140113-16.tar.gz
+  * sha1coin-20140114-23.tar.gz
 * Mac OSX用
   * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
@@ -51,6 +51,8 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 
 ## 変更履歴
 
+* 20140114-23
+  * trip= の検索指定がないときに採掘すると異常終了する不具合を修正
 * 20140113-16
   * [sha1coin-cpuminer]のコードを取り込み、採掘/トリップ検索速度を向上
   * タスクバーのアイコン修正
@@ -154,6 +156,7 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 
 ## 旧バージョンのダウンロード
 
+* [sha1coin-20140113]
 * [sha1coin-win32-setup-20140111-18.exe]
 * [sha1coin-qt-20140111-18.exe]
 * [sha1coind-20140111-18.exe]
@@ -169,7 +172,8 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [Donate-MONA]: monacoin:MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY
 [Bitmessage]: https://bitmessage.ch/
 [Sha1coin]: http://ohac.github.io/sha1coin/
-[ここからダウンロード]: http://ge.tt/5uQLBwD1?c
+[ここからダウンロード]: http://ge.tt/24MStBE1?c
+[sha1coin-20140113]: http://ge.tt/5uQLBwD1?c
 [sha1coin-win32-setup-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/0?c
 [sha1coin-qt-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/1?c
 [sha1coind-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/2?c
