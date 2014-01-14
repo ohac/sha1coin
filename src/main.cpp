@@ -4627,7 +4627,7 @@ void static Sha1coinMiner(CWallet *pwallet)
     genb64tbl();
     const char* trip = mapArgs.count("-trip") ? mapArgs["-trip"].c_str() : NULL;
     const int triplen = trip == NULL ? 0 : strlen(trip);
-    uint32_t searchchunk = decodeb64chunk(trip) & 0x00ffffff;
+    uint32_t searchchunk = trip == NULL ? 0 : (decodeb64chunk(trip) & 0x00ffffff);
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
