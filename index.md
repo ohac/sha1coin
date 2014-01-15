@@ -26,7 +26,7 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 プリマイン・インスタマインを防ぐために最初の10000ブロックの報酬は10分の1の5.00に設定しております。
 他のパラメータはLitecoinと同じです。
 
-現在のところ、随所にLitecoinの名残がありますが、そのうち掃除したいと思います。
+SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良いので、高速なGPUがない場合、CPUしかない場合、GPU採掘のついでに余ったCPUリソースを使いたい、といった場合はSha1coinの採掘がおすすめです。Sha1coinをSakuracoinやMonacoinとトレードすることも交渉次第で可能です。
 
 今のところ 36.2.132.153:9513 でsha1coindを動かしているので、初期ノードとしてお使いください。
 ノード数が少なく、ハッシュパワーも少ないのでポートの公開や採掘で協力していただけると助かります。
@@ -75,12 +75,12 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
     trip=mona
     shrinkdebugfile=0
 
-非効率ではありますが、起動直後から採掘する場合はgen=1をつける方法があります。プロセス数はgenproclimitで指定可能です。
+起動直後から採掘する場合はgen=1をつける方法があります。プロセス数はgenproclimitで指定可能です。
 
     gen=1
     genproclimit=2
 
-効率を求めるなら[sha1coin-cpuminer]を使うか、自作するかしてみてください。
+効率を求めるなら[sha1coin-cpuminer]やcudaminer,cgminerを改造してみてください。
 
 ## 2chトリップ検索機能について
 
@@ -92,7 +92,17 @@ sha1coin.confのtripで指定した文字列が発見されると、debug.logに
 debug.logの場所はWindowsの場合、C:\Users\ユーザー名\AppData\Roaming\Sha1coin となります。
 Linuxの場合は/home/ユーザー名/.sha1coinです。
 
-## コインの入手方法(準備中)
+今後の予定
+
+* 複数のトリップ検索機能追加([sha1coin-cpuminer]ではすでに開発済み。)
+* CPUがアイドル状態のときだけ採掘するオプション
+* 検索結果をdebug.logではなく、別のファイルに保存するように変更
+
+## コインの交換方法(準備中)
+
+私がスプレッドありの固定相場で取り引きします。
+掲示板、twitter、メールでお問い合わせください。
+手持ちのコインはSakuracoin, Monacoin, Sha1coin, TAG, HBN, SRC, QRK, BTCです。
 
 ## 外部の交換所(Exchange)
 
