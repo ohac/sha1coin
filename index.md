@@ -139,6 +139,7 @@ PoW以外はほぼLitecoinと同じ。
 
 ## Others
 
+* [Webウォレット] (テスト中)
 * [したらば掲示板]
 * [外部Wiki1]
 
@@ -202,3 +203,4 @@ URLはohacのge.ttとDropboxアカウントを使用しておりますので、�
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
 [Sakuracoin]: http://ohac.github.io/sakuracoin/
+[Webウォレット]: http://coins.asiru.info/index2.html
