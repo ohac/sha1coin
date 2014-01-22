@@ -147,7 +147,7 @@ PoW以外はほぼLitecoinと同じ。
 
 ## その他のコイン
 
-* [Sakuracoin]
+* ![sakuracoin64](images/sakuracoin64.png) [Sakuracoin]
 
 ## ダウンロードについて
 
