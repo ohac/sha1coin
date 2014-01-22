@@ -5,6 +5,8 @@ title: Sha1coin
 
 # Sha1coin
 
+![sha1coin64](images/sha1coin64.png)
+
 いつもSha1coinにご協力いただき、ありがとうございます。
 
 <ul>
