@@ -10,7 +10,7 @@ TYPE2PORT = {
   'TagCoin' => 9624,
   'sha1coin' => 9512,
   'sakuracoin' => 9302,
-  'monacoin' => 9402,
+  'monacoin' => 19402,
 }
 TARGETTYPE = 'sha1coin'
 
@@ -53,8 +53,6 @@ TYPE2PORT.keys.each do |type|
   req = {"method" => "getinfo"}
   res = rpcrequest(rpcuser, password, host, port, req)
   next unless res
-  lines << ''
-  lines << "## %s" % type
 
   result = res['result']
   error = res['error']
@@ -67,20 +65,32 @@ TYPE2PORT.keys.each do |type|
   paytxfee = result["paytxfee"]
   mininput = result["mininput"]
 
+  req = {"method" => "getmininginfo"}
+  res = rpcrequest(rpcuser, password, host, port, req)
+  next unless res
+
+  result = res['result']
+  networkhashps = result["networkhashps"] / 1000
+
+  lines << ''
+  lines << "## %s" % type
   lines << "* ブロックチェインの高さ: %d ブロック" % blocks
   lines << "* ブロックチェインの成長速度: N/A"
   lines << "* 採掘難易度: %.5f" % difficulty
   lines << "* 次回採掘難易度変更: 残り N/A ブロック"
   lines << "* シードノードへの接続ノード数: %d" % connections
+  lines << "* ネットワークハッシュ速度: %.5f" % networkhashps
   if TARGETTYPE == type
     target[:blocks] = blocks
     target[:difficulty] = difficulty
     target[:connections] = connections
+    target[:networkhashps] = networkhashps
   end
 end
 
-lines[2] = "title: %s の状態(B:%d, D:%.5f, C:%d)" % [now.strftime('%H:%M'),
-    target[:blocks], target[:difficulty], target[:connections]]
+lines[2] = "title: %s の状態(B:%d, D:%.5f, C:%d, H:%.5f)" % [
+    now.strftime('%H:%M'), target[:blocks], target[:difficulty],
+    target[:connections], target[:networkhashps]]
 
 fd = File.open("_posts/%s-Info.md" % now.strftime('%Y-%m-%d-%H'), 'w')
 fd.print(lines.join("\n"))
