@@ -70,7 +70,7 @@ TYPE2PORT.keys.each do |type|
   next unless res
 
   result = res['result']
-  networkhashps = result["networkhashps"] / 1000
+  networkhashps = result["networkhashps"] / 1000.0
 
   lines << ''
   lines << "## %s" % type

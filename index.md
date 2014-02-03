@@ -3,9 +3,7 @@ layout: default
 title: Sha1coin
 ---
 
-# Sha1coin
-
-![sha1coin64](images/sha1coin64.png)
+# ![sha1coin64](images/sha1coin64.png) Sha1coin
 
 いつもSha1coinにご協力いただき、ありがとうございます。
 
