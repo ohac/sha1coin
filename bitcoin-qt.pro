@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = sha1coin-qt
 macx:TARGET = "Sha1coin-Qt"
-VERSION = 0.8.6.1
+VERSION = 0.8.6.2
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
