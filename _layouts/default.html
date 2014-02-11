@@ -5,8 +5,116 @@
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
     <link href='/sha1coin/css/cross/cross.css' rel='stylesheet' type='text/css' />
     <link href='/sha1coin/images/favicon.png' rel='shortcut icon' type='image/png' />
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.jqplot.min.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
   </head>
   <body>
     {{ content }}
+    <script type="text/javascript">
+      var graphData = [
+      [
+0.003906,
+0.015625,
+0.053522,
+0.096788,
+0.096788,
+0.096788,
+0.096788,
+0.096788,
+0.096788,
+0.065957,
+0.065957,
+0.065957,
+0.065957,
+0.052435,
+0.052435,
+0.052435,
+0.052435,
+0.049164,
+0.049164,
+0.049164,
+0.049164,
+0.049164,
+0.049164,
+0.049164,
+0.024807,
+0.024807,
+0.024807,
+0.024807,
+0.024807,
+0.024807,
+0.024807,
+0.024807,
+0.010690,
+0.010690,
+0.015722,
+0.015722,
+0.025976,
+0.025976,
+0.025976,
+      ],
+      [
+1873.650,
+1647.429,
+3147.499,
+5013.430,
+2588.508,
+2314.261,
+2116.995,
+1534.822,
+1087.366,
+ 422.960,
+ 616.407,
+2485.302,
+2029.554,
+2348.522,
+1219.876,
+1548.304,
+ 716.808,
+1160.877,
+1024.016,
+ 867.603,
+ 532.781,
+ 386.144,
+ 332.377,
+ 821.168,
+ 320.623,
+ 436.541,
+ 160.312,
+ 439.007,
+ 209.638,
+ 382.281,
+ 330.488,
+ 210.871,
+ 434.689,
+ 411.838,
+ 591.619,
+ 854.994,
+1014.939,
+ 510.052,
+ 484.227,
+      ],
+      ];
+      var plot = $.jqplot('lineChart', graphData, {
+        axes: {
+          xaxis: {min:1, max: 60, tickInterval: 7},
+          yaxis: {min:0, max: 0.05},
+          y2axis: {min: 0, max: 2500},
+        },
+        series: [
+          {yaxis: 'yaxis', label: '採掘難易度'},
+          {yaxis: 'y2axis', label: 'ハッシュレート'},
+        ],
+        legend: {show: true, location: 'nw'},
+      });
+    </script>
   </body>
 </html>

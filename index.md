@@ -3,17 +3,41 @@ layout: default
 title: Sha1coin
 ---
 
+<div style="position:absolute;top:20;left:400px">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="ohac">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div class="fb-like" data-href="http://ohac.github.io/sha1coin" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+<script src="http://widget.monash.pw/coin.js"></script>
+&nbsp;
+<script>
+CoinWidgetCom.go({
+	wallet_address: "MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY"
+	, currency: "monacoin"
+	, counter: "count"
+	, alignment: "bl"
+	, qrcode: true
+	, auto_show: false
+	, lbl_button: "寄付する"
+	, lbl_address: "このアドレスにMonacoinを寄付する:"
+	, lbl_count: "回の寄付"
+	, lbl_amount: "MONA"
+	});
+</script>
+</div>
+
 # ![sha1coin64](images/sha1coin64.png) Sha1coin
 
 いつもSha1coinにご協力いただき、ありがとうございます。
 
 <ul>
-{% for post in site.posts limit:10 %}
+{% for post in site.posts limit:3 %}
 <li>
 <a href="/sha1coin{{post.url}}">{{ post.date | date_to_long_string }} : {{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
+
+<div id="lineChart" style="width:800px; height:150px;"></div>
 
 ## Sha1coinについて
 
@@ -110,7 +134,13 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## 仕様
 
-PoW以外はほぼLitecoinと同じ。
+* Algorithm: SHA-1 x 27 + XOR
+* Premine: なし
+* Block reward: 50 SHA (10000ブロックまでは5 SHAに制限)
+* Block time: 2.5 minutes (Litecoinと同じ)
+* Retarget: 2016 blocks (~3.5 days) (Litecoinと同じ)
+* subsidy halves in 840k blocks (~4 years) (Litecoinと同じ)
+* Totalcoins: 83.55 million (Litecoinとほぼ同じ)
 
 ## 採掘所(Pools)
 
