@@ -164,24 +164,6 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 
 [Donate-SKR], [Donate-SHA], [Donate-MONA]
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="ohac">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<script src="http://widget.monash.pw/coin.js"></script>
-<script>
-CoinWidgetCom.go({
-	wallet_address: "MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY"
-	, currency: "monacoin"
-	, counter: "count"
-	, alignment: "bl"
-	, qrcode: true
-	, auto_show: false
-	, lbl_button: "寄付する"
-	, lbl_address: "このアドレスにMonacoinを寄付する:"
-	, lbl_count: "回の寄付"
-	, lbl_amount: "MONA"
-	});
-</script>
-
 [Donate-SKR]: sakuracoin:MTu6jrxp5xD6RHWeZUEpw7X5WnpmEzYTkd
 [Donate-SHA]: sha1coin:SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f
 [Donate-MONA]: monacoin:MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY
