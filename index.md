@@ -52,22 +52,18 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 
 SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良いので、高速なGPUがない場合、CPUしかない場合、GPU採掘のついでに余ったCPUリソースを使いたい、といった場合はSha1coinの採掘がおすすめです。Sha1coinをSakuracoinやMonacoinとトレードすることも交渉次第で可能です。
 
-今のところ 36.2.132.153:9513 でsha1coindを動かしているので、初期ノードとしてお使いください。
 ノード数が少なく、ハッシュパワーも少ないのでポートの公開や採掘で協力していただけると助かります。
 
 ## ダウンロード
 
-[ここからダウンロード]してください。(2014/01/14 23:00バージョン)
-寄付をいただけると私が喜びます。少額でもうれしいです。
-
-[Donate-SKR], [Donate-SHA], [Donate-MONA]
+[ここからダウンロード]してください。(2014/01/16 18:00バージョン)
 
 * Windows用
-  * sha1coin-win32-setup-20140114-23.exe インストーラ版
-  * sha1coin-qt-20140114-23.exe スタンドアローン版
-  * sha1coind-20140114-23.exe コンソール版
+  * sha1coin-win32-setup-20140216-18.exe インストーラ版
+  * sha1coin-qt-20140216-18.exe スタンドアローン版
+  * sha1coind-20140216-18.exe コンソール版
 * Linux用
-  * sha1coin-20140114-23.tar.gz
+  * sha1coin-20140216-19.tar.gz
 * Mac OSX用
   * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
@@ -144,23 +140,6 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 なし
 
-## Bounties
-
-なし(アイデア募集中)
-
-* 例
-  * Mac OSX用のクライアントソフト作成
-  * クライアントソフトの日本語化
-  * Webウォレットサービス
-  * Block Explorer
-
-## Funds
-
-なし(アイデア募集中)
-
-* 例
-  * 日本語ブログ記事1つにつき1.0SHA等
-
 ## Others
 
 * [Webウォレット] (テスト中)
@@ -174,28 +153,12 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## ダウンロードについて
 
 このページは開発者のみ編集可能に設定しておりますので、ダウンロードのURLは他の人は改ざんできません。
-URLはohacのge.ttとDropboxアカウントを使用しておりますので、こちらも改ざんできませんが、念のためmd5sumを付けておきます。
+URLはohacのGitHubアカウントを使用しておりますので、こちらも改ざんできませんが、念のためmd5sumを付けておきます。
 
-    609ef8426b3fd11d9fc8bb8a9d830f5d *sha1coin-win32-setup-20140113-16.exe
-    bc26d0a7e12bef157ffc837460f953cb *sha1coin-qt-20140113-16.exe
-    8f622b7ce26a5e2b71418ace21237b34 *sha1coind-20140113-16.exe
-    979de2a135bd302f87e8dea876998e3e *sha1coin-20140113-16.tar.gz
-    d57edc0bcf9da6f1c97616c215e9a8ff *sha1coin-win32-setup-20140112-12.exe
-    48a7a78e64b7ef7a2d4f83a923ae2254 *sha1coin-qt-20140112-12.exe
-    2decf76ab926558148a3495b5c9d821a *sha1coind-20140112-12.exe
-    dbe41e086ca6e4b2ae664dddd6c17515 *sha1coin-20140112-12.tar.gz
-    55a61d57f60c22677ed7a3dd5806e370 *sha1coin-win32-setup-20140111-18.exe
-    52623d350fa82e3cb3dee8215e07bfae *sha1coin-qt-20140111-18.exe
-    53595757fe563b8348f6f8b609758cfd *sha1coind-20140111-18.exe
-    a12774e919942921d6d1ff49252eafa3 *sha1coin-20140111-19.tar.gz
-
-## 旧バージョンのダウンロード
-
-* [sha1coin-20140113]
-* [sha1coin-win32-setup-20140111-18.exe]
-* [sha1coin-qt-20140111-18.exe]
-* [sha1coind-20140111-18.exe]
-* [sha1coin-20140111-19.tar.gz]
+    458d7642b7b3a3d4ef40ffb6db910b2b *sha1coin-20140216-19.tar.gz
+    e27fe5eb5ce7e1bef102861c961c7caf *sha1coind-20140216-18.exe
+    3e0dab06ef61b5d18b4bc208c9c72a22 *sha1coin-qt-20140216-18.exe
+    35e0d1f75a3d715851b313b10078d71c *sha1coin-win32-setup-20140216-18.exe
 
 ## 寄付
 
@@ -224,20 +187,7 @@ CoinWidgetCom.go({
 [Donate-MONA]: monacoin:MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY
 [Bitmessage]: https://bitmessage.ch/
 [Sha1coin]: http://ohac.github.io/sha1coin/
-[ここからダウンロード]: http://ge.tt/24MStBE1?c
-[sha1coin-20140113]: http://ge.tt/5uQLBwD1?c
-[sha1coin-win32-setup-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/0?c
-[sha1coin-qt-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/1?c
-[sha1coind-20140112-12.exe]: http://ge.tt/2SxtVoD1/v/2?c
-[sha1coin-20140112-12.tar.gz]: http://ge.tt/2SxtVoD1/v/3?c
-[sha1coin-win32-setup-20140111-18.exe]: http://ge.tt/5Un3BkD1/v/0?c
-[sha1coin-win32-setup-20140111-18.exe-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coin-win32-setup-20140111-18.exe
-[sha1coin-qt-20140111-18.exe]: http://ge.tt/31nu4lD1/v/5?c
-[sha1coin-qt-20140111-18.exe-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coin-qt-20140111-18.exe
-[sha1coind-20140111-18.exe]: http://ge.tt/31nu4lD1/v/1?c
-[sha1coind-20140111-18.exe-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coind-20140111-18.exe
-[sha1coin-20140111-19.tar.gz]: http://ge.tt/47PBBkD1/v/0?c
-[sha1coin-20140111-19.tar.gz-mirror]: https://dl.dropboxusercontent.com/u/5745602/sha1coin-20140111-19.tar.gz
+[ここからダウンロード]: https://github.com/ohac/sha1coin/releases
 [したらば掲示板交換]: http://jbbs.shitaraba.net/bbs/read.cgi/internet/19552/1388817096/l50
 [したらば掲示板]: http://jbbs.shitaraba.net/internet/19552/
 [外部Wiki1]: http://www59.atwiki.jp/japancryptocurrency/pages/18.html
