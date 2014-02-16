@@ -122,12 +122,6 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * CPUがアイドル状態のときだけ採掘するオプション
 * 検索結果をdebug.logではなく、別のファイルに保存するように変更
 
-## コインの交換方法(準備中)
-
-私がスプレッドありの固定相場で取り引きします。
-掲示板、twitter、メールでお問い合わせください。
-手持ちのコインはSakuracoin, Monacoin, Sha1coin, TAG, HBN, SRC, QRK, BTCです。
-
 ## 外部の交換所(Exchange)
 
 * [したらば掲示板交換]
