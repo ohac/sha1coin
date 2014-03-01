@@ -138,13 +138,15 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## ブロック情報(Block explorer)
 
-なし
+* [Abe]
 
 ## Others
 
 * [Webウォレット] (テスト中)
 * [したらば掲示板]
 * [外部Wiki1]
+* [コイン寄付ボタン]
+* [暗号通貨寄付ウィジェット]
 
 ## その他のコイン
 
@@ -177,3 +179,6 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
 [Sakuracoin]: http://ohac.github.io/sakuracoin/
 [Webウォレット]: http://coins.asiru.info/index2.html
+[コイン寄付ボタン]: http://bitcoinlove.lv9.co/
+[Abe]: http://abe.sighash.info/
+[暗号通貨寄付ウィジェット]: http://coindonationwidget.com/jp/
