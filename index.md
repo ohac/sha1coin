@@ -13,14 +13,6 @@ title: Sha1coin
 
 いつもSha1coinにご協力いただき、ありがとうございます。
 
-<ul>
-{% for post in site.posts limit:3 %}
-<li>
-<a href="/sha1coin{{post.url}}">{{ post.date | date_to_long_string }} : {{ post.title }}</a>
-</li>
-{% endfor %}
-</ul>
-
 <div id="lineChart" style="width:800px; height:150px;"></div>
 
 ## Sha1coinについて
