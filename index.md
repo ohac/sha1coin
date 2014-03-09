@@ -198,7 +198,7 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [ここからダウンロード]: https://github.com/ohac/sha1coin/releases
 [したらば掲示板交換]: http://jbbs.shitaraba.net/bbs/read.cgi/internet/19552/1388817096/l50
 [したらば掲示板]: http://jbbs.shitaraba.net/internet/19552/
-[外部Wiki1]: http://www59.atwiki.jp/japancryptocurrency/pages/18.html
+[外部Wiki1]: ttp://www59.atwiki.jp/japancryptocurrency/pages/18.html
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
 [Sakuracoin]: http://ohac.github.io/sakuracoin/
