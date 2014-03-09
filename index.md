@@ -126,6 +126,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## Others
 
+* [Twitterウォレット]
 * [Webウォレット] (テスト中)
 * [したらば掲示板]
 * [外部Wiki1]
@@ -209,6 +210,7 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
 [Sakuracoin]: http://ohac.github.io/sakuracoin/
+[Twitterウォレット]: http://www.sighash.info/
 [Webウォレット]: http://coins.asiru.info/index2.html
 [コイン寄付ボタン]: http://bitcoinlove.lv9.co/
 [Abe]: http://abe.sighash.info/
