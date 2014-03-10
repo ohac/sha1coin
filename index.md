@@ -124,6 +124,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [外部Wiki1]
 * [コイン寄付ボタン]
 * [暗号通貨寄付ウィジェット]
+* [CPU用Miner制作] (Windows 64bit用バイナリあり)
 
 ## その他のコイン
 
@@ -207,3 +208,4 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [コイン寄付ボタン]: http://bitcoinlove.lv9.co/
 [Abe]: http://abe.sighash.info/
 [暗号通貨寄付ウィジェット]: http://coindonationwidget.com/jp/
+[CPU用Miner制作]: http://bitcoinlove.lv9.co/cpucoin.php
