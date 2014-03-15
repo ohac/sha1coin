@@ -45,22 +45,8 @@ namespace Checkpoints
         633.4       // * estimated number of transactions per day after checkpoint
     };
 
-    static MapCheckpoints mapCheckpointsTestnet = 
-        boost::assign::map_list_of
-        (   546, uint256("000000002a936ca763904c3c35fce2f3556c559c0214345d31b1bcebf76acb70"))
-        ;
-    static const CCheckpointData dataTestnet = {
-        &mapCheckpointsTestnet,
-        1369685559,
-        37581,
-        300
-    };
-
     const CCheckpointData &Checkpoints() {
-        if (fTestNet)
-            return dataTestnet;
-        else
-            return data;
+        return data;
     }
 
     bool CheckBlock(int nHeight, const uint256& hash)
@@ -78,6 +64,7 @@ namespace Checkpoints
 
     // Guess how far we are in the verification process at the given block index
     double GuessVerificationProgress(CBlockIndex *pindex) {
+        if (fTestNet) return 0.0; // Testnet has no checkpoints
         if (pindex==NULL)
             return 0.0;
 
