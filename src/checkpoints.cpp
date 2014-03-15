@@ -35,14 +35,14 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-        (  1500, uint256("0x841a2965955dd288cfa707a755d05a54e45f8bd476835ec9af4402a2b59a2967"))
+        ( 48191, uint256("0x4499f469507e9dbd2850b65dd7db62429b3fecb207b1abbd785ae84c11c793cf"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
-        1383887110, // * UNIX timestamp of last checkpoint block
-        2179203,    // * total number of transactions between genesis and last checkpoint
+        1394891781, // * UNIX timestamp of last checkpoint block
+        48454,      // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        8000.0     // * estimated number of transactions per day after checkpoint
+        633.4       // * estimated number of transactions per day after checkpoint
     };
 
     static MapCheckpoints mapCheckpointsTestnet = 
@@ -65,7 +65,6 @@ namespace Checkpoints
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
-        return true; // TODO disable checkpoints
         if (fTestNet) return true; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return true;
@@ -79,7 +78,6 @@ namespace Checkpoints
 
     // Guess how far we are in the verification process at the given block index
     double GuessVerificationProgress(CBlockIndex *pindex) {
-        return 0.0; // TODO
         if (pindex==NULL)
             return 0.0;
 
@@ -111,7 +109,6 @@ namespace Checkpoints
 
     int GetTotalBlocksEstimate()
     {
-        return 0; // TODO
         if (fTestNet) return 0; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return 0;
@@ -123,7 +120,6 @@ namespace Checkpoints
 
     CBlockIndex* GetLastCheckpoint(const std::map<uint256, CBlockIndex*>& mapBlockIndex)
     {
-        return NULL; // TODO
         if (fTestNet) return NULL; // Testnet has no checkpoints
         if (!GetBoolArg("-checkpoints", true))
             return NULL;
