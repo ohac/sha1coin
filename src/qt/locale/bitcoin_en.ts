@@ -1421,8 +1421,8 @@ Address: %4
     </message>
     <message>
         <location line="+34"/>
-        <source>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address to send the payment to (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to send the payment to (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
+        <translation>The address to send the payment to (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -1485,8 +1485,8 @@ Address: %4
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address to sign the message with (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
+        <translation>The address to sign the message with (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1558,8 +1558,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>The address the message was signed with (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
+        <translation>The address the message was signed with (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</translation>
     </message>
     <message>
         <location line="+40"/>

@@ -1451,7 +1451,7 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Sha1coin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Sha1coin address (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1547,7 +1547,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>The address the message was signed with (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1568,7 +1568,7 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Sha1coin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Sha1coin address (e.g. SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f)</source>
         <translation type="unfinished"/>
     </message>
     <message>
