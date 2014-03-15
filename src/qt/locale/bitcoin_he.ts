@@ -1318,8 +1318,8 @@ Address: %4
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123.456 לייטקוין</translation>
+        <source>123.456 SHA</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>

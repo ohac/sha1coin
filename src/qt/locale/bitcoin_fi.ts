@@ -1319,8 +1319,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>123.456 BTC</source>
-        <translation>123,456 BTC</translation>
+        <source>123.456 SHA</source>
+        <translation>123,456 SHA</translation>
     </message>
     <message>
         <location line="+31"/>
