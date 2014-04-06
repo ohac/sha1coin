@@ -96,6 +96,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## 外部の交換所(Exchange)
 
+* [Twitterウォレット] (Ripple内で取引可能)
 * [したらば掲示板交換]
 
 ## 仕様
