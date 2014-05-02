@@ -13,8 +13,6 @@ title: Sha1coin
 
 いつもSha1coinにご協力いただき、ありがとうございます。
 
-<div id="lineChart" style="width:800px; height:150px;"></div>
-
 ## Sha1coinについて
 
 Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
@@ -67,7 +65,7 @@ SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良い�
 
     rpcuser=user
     rpcpassword=pass
-    addnode=36.2.132.153:9513
+    addnode=36.55.238.28:9513
     trip=mona
     shrinkdebugfile=0
 
@@ -111,7 +109,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## 採掘所(Pools)
 
-なし
+* [NOMP] (テスト運用中)
 
 ## ブロック情報(Block explorer)
 
@@ -126,6 +124,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [コイン寄付ボタン]
 * [暗号通貨寄付ウィジェット]
 * [CPU用Miner制作] (Windows 64bit用バイナリあり)
+* [monagraph]
 
 ## その他のコイン
 
@@ -210,3 +209,5 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [Abe]: http://abe.sighash.info/
 [暗号通貨寄付ウィジェット]: http://coindonationwidget.com/jp/
 [CPU用Miner制作]: http://bitcoinlove.lv9.co/cpucoin.php
+[NOMP]: http://www.sighash.info:8080/
+[monagraph]: http://monagraph.com/
