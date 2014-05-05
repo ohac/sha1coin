@@ -113,7 +113,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## 採掘所(Pools)
 
-* [NOMP] (テスト運用中)
+* [NOMP]
 
 ## ブロック情報(Block explorer)
 
