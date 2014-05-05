@@ -96,6 +96,10 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 * [Twitterウォレット] (Ripple内で取引可能)
 * [したらば掲示板交換]
+* ヤフオクやモナオクでの販売/交換もあるようです。
+* 投票中
+  * [MintPal](https://www.mintpal.com/voting#SHA)
+  * [ICURREX](https://www.icurrex.com/coin_poll)
 
 ## 仕様
 
