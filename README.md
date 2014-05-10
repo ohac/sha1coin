@@ -3,8 +3,8 @@ Sha1coin integration/staging tree
 
 http://ohac.github.io/sha1coin/
 
-Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2011-2013 Litecoin Developers
+Copyright (c) 2009-2014 Bitcoin Developers
+Copyright (c) 2011-2014 Litecoin Developers
 Copyright (c) 2013-2014 Dr. Kimoto Chan
 Copyright (c) 2013-2014 Sha1coin Developers
 

@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.6.2
+!define VERSION 0.8.7.1
 !define COMPANY "Sha1coin project"
 !define URL http://ohac.github.io/sha1coin
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile sha1coin-0.8.6.2-win32-setup.exe
+OutFile sha1coin-${VERSION}-win32-setup.exe
 InstallDir $PROGRAMFILES\Sha1coin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.8.6.2
+VIProductVersion ${VERSION}
 VIAddVersionKey ProductName Sha1coin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
