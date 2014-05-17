@@ -98,6 +98,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [したらば掲示板交換]
 * ヤフオクやモナオクでの販売/交換もあるようです。
 * 投票中
+  * [もなとれ](http://vote.monatr.jp/)
   * [MintPal](https://www.mintpal.com/voting#SHA)
 
 ## 仕様
