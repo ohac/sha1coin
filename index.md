@@ -99,7 +99,6 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * ヤフオクやモナオクでの販売/交換もあるようです。
 * 投票中
   * [MintPal](https://www.mintpal.com/voting#SHA)
-  * [ICURREX](https://www.icurrex.com/coin_poll)
 
 ## 仕様
 
@@ -213,5 +212,5 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [Abe]: http://abe.sighash.info/
 [暗号通貨寄付ウィジェット]: http://coindonationwidget.com/jp/
 [CPU用Miner制作]: http://bitcoinlove.lv9.co/cpucoin.php
-[NOMP]: http://www.sighash.info:8080/
+[NOMP]: http://nomp.sighash.info/
 [monagraph]: http://monagraph.com/
