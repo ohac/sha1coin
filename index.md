@@ -99,6 +99,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * ヤフオクやモナオクでの販売/交換もあるようです。
 * 投票中
   * [もなとれ](http://vote.monatr.jp/)
+  * [ICURREX](https://www.icurrex.com/vote)
   * [MintPal](https://www.mintpal.com/voting#SHA)
 
 ## 仕様
