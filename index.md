@@ -115,6 +115,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## 採掘所(Pools)
 
 * [NOMP]
+* [LA Mining pool](http://pool.xau.jp/)
 
 ## ブロック情報(Block explorer)
 
