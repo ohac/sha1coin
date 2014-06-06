@@ -115,7 +115,8 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## 採掘所(Pools)
 
 * [NOMP]
-* [LA Mining pool](http://pool.xau.jp/)
+* [LA Sha1coin Pool]
+* [LA NOMP pool1]
 
 ## ブロック情報(Block explorer)
 
@@ -217,3 +218,5 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [CPU用Miner制作]: http://bitcoinlove.lv9.co/cpucoin.php
 [NOMP]: http://nomp.sighash.info/
 [monagraph]: http://monagraph.com/
+[LA Sha1coin Pool]: http://multi.xau.jp/sha1coin/
+[LA NOMP pool1]: http://pool1.xau.jp/
