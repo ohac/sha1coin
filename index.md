@@ -223,4 +223,4 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [monagraph]: http://monagraph.com/
 [LA Sha1coin Pool]: http://multi.xau.jp/sha1coin/
 [LA NOMP pool1]: http://pool1.xau.jp/
-[Sha1coin対応sgminer] http://holo-n94.github.io/sph-sgminer/
+[Sha1coin対応sgminer]: http://holo-n94.github.io/sph-sgminer/
