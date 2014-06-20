@@ -126,6 +126,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## Others
 
+* [addnode情報](http://seed.sighash.info/) 同期できないときにご確認ください。
 * [Twitterウォレット]
 * [Webウォレット] (テスト中)
 * [したらば掲示板]
