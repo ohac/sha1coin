@@ -56,6 +56,8 @@ SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良い�
 
 ## 採掘手順
 
+2014/6/21に[Sha1coin対応sgminer]が公開されました。今後は以下のCPU採掘手順で採掘するのは困難となるかもしれません。ご注意ください。GPUの導入やプールのご利用を検討してください。
+
 ヘルプ > デバッグウィンドウ > Consoleタブ > setgenerate true[Enter]
 
 * setgenerate false で停止
@@ -220,3 +222,4 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [monagraph]: http://monagraph.com/
 [LA Sha1coin Pool]: http://multi.xau.jp/sha1coin/
 [LA NOMP pool1]: http://pool1.xau.jp/
+[Sha1coin対応sgminer] http://holo-n94.github.io/sph-sgminer/
