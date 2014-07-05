@@ -97,10 +97,10 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## 外部の交換所(Exchange)
 
 * [Twitterウォレット] (Ripple内で取引可能)
+* [もなとれ](http://vote.monatr.jp/)
 * [したらば掲示板交換]
 * ヤフオクやモナオクでの販売/交換もあるようです。
 * 投票中
-  * [もなとれ](http://vote.monatr.jp/) 準備中のようです。
   * [ICURREX](https://www.icurrex.com/vote) サービス停止中のようです。
 
 ## 仕様
