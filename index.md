@@ -134,6 +134,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [暗号通貨寄付ウィジェット]
 * [CPU用Miner制作] (Windows 64bit用バイナリあり)
 * [monagraph]
+* [Faucet](https://multi.xau.jp/faucet/)
 
 ## その他のコイン
 
