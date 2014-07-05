@@ -135,6 +135,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [CPU用Miner制作] (Windows 64bit用バイナリあり)
 * [monagraph]
 * [Faucet](https://multi.xau.jp/faucet/)
+* [Pool stats](http://pool.xau.jp/stats/)
 
 ## その他のコイン
 
