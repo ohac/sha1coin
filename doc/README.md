@@ -3,7 +3,6 @@ Sha1coin 0.8.x BETA
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
-Copyright (c) 2013-2014 Dr. Kimoto Chan
 Copyright (c) 2013-2014 Sha1coin Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
