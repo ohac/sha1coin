@@ -10,6 +10,7 @@ IDI_ICON2 ICON DISCARDABLE "icons/bitcoin_testnet.ico"
 #define VER_FILEVERSION_STR    VER_PRODUCTVERSION_STR
 #define COPYRIGHT_STR          "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin developers" \
                                " 2011-" STRINGIZE(COPYRIGHT_YEAR) " The Litecoin developers" \
+                               " 2009-" STRINGIZE(COPYRIGHT_YEAR) " The DigiByte developers" \
                                " 2013-" STRINGIZE(COPYRIGHT_YEAR) " The Sha1coin developers"
 
 VS_VERSION_INFO VERSIONINFO
