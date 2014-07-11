@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Litecoin cannot be compiled without assertions."
+# error "Sha1coin cannot be compiled without assertions."
 #endif
 
 //
