@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.8.7.1
+!define VERSION 0.8.7.2
 !define COMPANY "Sha1coin project"
 !define URL http://ohac.github.io/sha1coin
 
