@@ -67,23 +67,25 @@ Release Process
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (sha1coin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit binary, installer + source (sha1coin-${VERSION}-win32-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (sha1coin-${VERSION}-linux.zip)
+  2. windows 32-bit binary, installer + source (sha1coin-${VERSION}-win32.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win32]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip sha1coin-${VERSION}-linux-gitian.zip -d sha1coin-${VERSION}-linux
+	unzip sha1coin-${VERSION}-linux.zip -d sha1coin-${VERSION}-linux
 	tar czvf sha1coin-${VERSION}-linux.tar.gz sha1coin-${VERSION}-linux
 	rm -rf sha1coin-${VERSION}-linux
+	rm sha1coin-${VERSION}-linux.zip
 
 **Windows .zip and setup.exe:**
 
-	unzip sha1coin-${VERSION}-win32-gitian.zip -d sha1coin-${VERSION}-win32
+	unzip sha1coin-${VERSION}-win32.zip -d sha1coin-${VERSION}-win32
 	mv sha1coin-${VERSION}-win32/sha1coin-*-setup.exe .
-	zip -r sha1coin-${VERSION}-win32.zip bitcoin-${VERSION}-win32
+	rm sha1coin-${VERSION}-win32.zip
+	zip -r sha1coin-${VERSION}-win32.zip sha1coin-${VERSION}-win32
 	rm -rf sha1coin-${VERSION}-win32
 
 **Perform Mac build:**
