@@ -146,10 +146,9 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 このページは開発者のみ編集可能に設定しておりますので、ダウンロードのURLは他の人は改ざんできません。
 URLはohacのGitHubアカウントを使用しておりますので、こちらも改ざんできませんが、念のためmd5sumを付けておきます。
 
-    458d7642b7b3a3d4ef40ffb6db910b2b *sha1coin-20140216-19.tar.gz
-    e27fe5eb5ce7e1bef102861c961c7caf *sha1coind-20140216-18.exe
-    3e0dab06ef61b5d18b4bc208c9c72a22 *sha1coin-qt-20140216-18.exe
-    35e0d1f75a3d715851b313b10078d71c *sha1coin-win32-setup-20140216-18.exe
+    ba4fd648a5db401d4ecde21f3b754079  sha1coin-0.8.7.2-win32-setup.exe
+    e6667b158768333d52ae0d1461818cb5  sha1coin-0.8.7.2-win32.zip
+    f55715f7692382e40f050357a1a72d0c  sha1coin-0.8.7.2-linux.tar.gz
 
 ## 寄付
 
