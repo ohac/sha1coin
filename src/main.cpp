@@ -81,7 +81,7 @@ int64 nHPSTimerStart = 0;
 int64 nTransactionFee = 0;
 int64 nMinimumInputValue = DUST_HARD_LIMIT;
 
-int64 nSwitchV2block = 1000000; // TODO
+int64 nSwitchV2block = 120000;
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -1281,7 +1281,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         if (pindexLast->nHeight+1 >= 0) { DiffMode = 2; }
     }
     else {
-        if (pindexLast->nHeight+1 >= nSwitchV2block) { DiffMode = 1; } // TODO
+        if (pindexLast->nHeight+1 >= nSwitchV2block) { DiffMode = 2; }
     }
     switch (DiffMode) {
     case 2:
