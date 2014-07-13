@@ -101,6 +101,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 * [Twitterウォレット] (Ripple内で取引可能)
 * [もなとれ](http://vote.monatr.jp/)
+* [MonacoEx](https://trade.monaco-ex.org/)
 * [したらば掲示板交換]
 * ヤフオクやモナオクでの販売/交換もあるようです。
 * 投票中
