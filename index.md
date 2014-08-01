@@ -39,6 +39,12 @@ SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良い�
   * sha1coin-0.8.7.2-win32.zip スタンドアローン版/コンソール版
 * Linux用
   * sha1coin-0.8.7.2-linux.tar.gz
+* Android用のソース(開発中)
+  * [sha1coin-wallet](https://github.com/ohac/sha1coin-wallet)
+  * [sha1coinj](https://github.com/ohac/sha1coinj)
+* [GitHubからダウンロード]してください。(2014/07/21 14:30バージョン)
+  * DigiShield V2に対応しました。
+
 * Mac OSX用
   * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
@@ -101,11 +107,10 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 * [Twitterウォレット] (Ripple内で取引可能)
 * [もなとれ](http://vote.monatr.jp/)
-* [MonacoEx](https://trade.monaco-ex.org/)
+* [MonacoEx Beta](https://trade.monaco-ex.org/)
+* [Japan Scrypt Trade](http://jpnscryptrade.cart.fc2.com/)
 * [したらば掲示板交換]
 * ヤフオクやモナオクでの販売/交換もあるようです。
-* 投票中
-  * [ICURREX](https://www.icurrex.com/vote) サービス停止中のようです。
 
 ## 仕様
 
@@ -130,7 +135,6 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## Others
 
 * [addnode情報](http://seed.sighash.info/) 同期できないときにご確認ください。
-* [Twitterウォレット]
 * [Webウォレット] (テスト中)
 * [したらば掲示板]
 * [外部Wiki1]
