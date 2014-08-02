@@ -42,9 +42,6 @@ SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良い�
 * Android用のソース(開発中)
   * [sha1coin-wallet](https://github.com/ohac/sha1coin-wallet)
   * [sha1coinj](https://github.com/ohac/sha1coinj)
-* [GitHubからダウンロード]してください。(2014/07/21 14:30バージョン)
-  * DigiShield V2に対応しました。
-
 * Mac OSX用
   * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
