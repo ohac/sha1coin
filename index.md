@@ -95,12 +95,6 @@ sha1coin.confのtripで指定した文字列が発見されると、debug.logに
 debug.logの場所はWindowsの場合、C:\Users\ユーザー名\AppData\Roaming\Sha1coin となります。
 Linuxの場合は/home/ユーザー名/.sha1coinです。
 
-今後の予定
-
-* 複数のトリップ検索機能追加([sha1coin-cpuminer]ではすでに開発済み。)
-* CPUがアイドル状態のときだけ採掘するオプション
-* 検索結果をdebug.logではなく、別のファイルに保存するように変更
-
 ## 外部の交換所(Exchange)
 
 * [Twitterウォレット] (Ripple内で取引可能)
