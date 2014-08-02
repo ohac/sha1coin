@@ -39,13 +39,14 @@ SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良い�
   * sha1coin-0.8.7.2-win32.zip スタンドアローン版/コンソール版
 * Linux用
   * sha1coin-0.8.7.2-linux.tar.gz
-* Android用のソース(開発中)
-  * [sha1coin-wallet](https://github.com/ohac/sha1coin-wallet)
-  * [sha1coinj](https://github.com/ohac/sha1coinj)
 * Mac OSX用
   * なし(作成する環境を持っていないので、どなたかご協力いただければ助かります。)
 
 ソースコードはGitHubのohac/[sha1coin]にあります。
+
+* Android用のソース(開発中)
+  * [sha1coin-wallet](https://github.com/ohac/sha1coin-wallet)
+  * [sha1coinj](https://github.com/ohac/sha1coinj)
 
 ## 変更履歴
 
