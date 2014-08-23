@@ -98,6 +98,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## 外部の交換所(Exchange)
 
 * [Twitterウォレット] (Ripple内で取引可能)
+  * [ripple charts (mtrib.net)](http://ripplecharts.mtrib.net/#/markets)
 * [もなとれ](http://vote.monatr.jp/)
 * [MonacoEx Beta](https://trade.monaco-ex.org/)
 * [Japan Scrypt Trade](http://jpnscryptrade.cart.fc2.com/)
