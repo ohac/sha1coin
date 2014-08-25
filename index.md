@@ -123,6 +123,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## ブロック情報(Block explorer)
 
+* [Abe2]: http://abe2.sighash.info/
 * [Abe]
 
 ## Others
