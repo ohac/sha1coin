@@ -3,12 +3,6 @@ layout: default
 title: Sha1coin
 ---
 
-<div style="position:absolute;top:20;left:400px">
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="ohac">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<div class="fb-like" data-href="http://ohac.github.io/sha1coin" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-</div>
-
 # ![sha1coin64](images/sha1coin64.png) Sha1coin
 
 ## Sha1coinについて
