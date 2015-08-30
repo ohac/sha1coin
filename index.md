@@ -109,7 +109,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## Others
 
 * [addnode情報](http://seed.sighash.info/) 同期できないときにご確認ください。
-* [Webウォレット] (テスト中)
+* [Twitterウォレット]
 * [Faucet](https://pool.xau.jp/faucet/)
 
 ## ダウンロードについて
@@ -125,7 +125,7 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [ここからダウンロード]: https://github.com/ohac/sha1coin/releases
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
-[Webウォレット]: https://wallet.sighash.info/
+[Twitterウォレット]: https://wallet.sighash.info/
 [Abe]: http://abe.sighash.info/
 [LA Sha1coin Pool]: https://pool.xau.jp/sha1coin/index.php
 [Sha1coin対応sgminer]: http://holo-n94.github.io/sph-sgminer/
