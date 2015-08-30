@@ -125,7 +125,7 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
 [ここからダウンロード]: https://github.com/ohac/sha1coin/releases
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
-[Twitterウォレット]: https://wallet.sighash.info/
+[Webウォレット]: https://wallet.sighash.info/
 [Abe]: http://abe.sighash.info/
 [LA Sha1coin Pool]: https://pool.xau.jp/sha1coin/index.php
 [Sha1coin対応sgminer]: http://holo-n94.github.io/sph-sgminer/
