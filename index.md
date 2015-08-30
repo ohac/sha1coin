@@ -11,10 +11,6 @@ title: Sha1coin
 
 # ![sha1coin64](images/sha1coin64.png) Sha1coin
 
-いつもSha1coinにご協力いただき、ありがとうございます。
-
-120000ブロックでDigiShield V2に切り替わります。v0.8.7.2へのバージョンアップをお願いします。
-
 ## Sha1coinについて
 
 Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
@@ -23,12 +19,8 @@ Sha1coinはハッシュ関数としてSHA-1を採用した仮想通貨です。
 処理の流れとしてはSHA-1後にbase64化し、12文字の26パターンを抜き出し、それらをすべてSHA-1を行ったあと、XORしています。
 この26パターンの処理のときにトリップ検索が行われますので、トリップ/秒はハッシュ/秒の26倍ということになります。
 
-プリマイン・インスタマインを防ぐために最初の10000ブロックの報酬は10分の1の5.00に設定しております。
+最初の10000ブロックの報酬は10分の1の5.00に設定しております。
 他のパラメータはLitecoinと同じです。
-
-SakuracoinやMonacoinはscryptなのでGPUで採掘する方が効率が良いので、高速なGPUがない場合、CPUしかない場合、GPU採掘のついでに余ったCPUリソースを使いたい、といった場合はSha1coinの採掘がおすすめです。Sha1coinをSakuracoinやMonacoinとトレードすることも交渉次第で可能です。
-
-ノード数が少なく、ハッシュパワーも少ないのでポートの公開や採掘で協力していただけると助かります。
 
 ## ダウンロード
 
@@ -98,12 +90,9 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 ## 外部の交換所(Exchange)
 
 * [Twitterウォレット] (Ripple内で取引可能)
-  * [ripple charts (mtrib.net)](http://ripplecharts.mtrib.net/#/markets)
 * [もなとれ](http://vote.monatr.jp/)
-* [MonacoEx Beta](https://trade.monaco-ex.org/)
 * [Japan Scrypt Trade](http://jpnscryptrade.cart.fc2.com/)
-* [したらば掲示板交換]
-* ヤフオクやモナオクでの販売/交換もあるようです。
+* [MonacoEx Beta](https://trade.monaco-ex.org/)
 
 ## 仕様
 
@@ -117,31 +106,17 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 
 ## 採掘所(Pools)
 
-* [NOMP]
 * [LA Sha1coin Pool]
-* [LA NOMP pool1]
 
 ## ブロック情報(Block explorer)
 
-* [Abe2](http://abe2.sighash.info/)
-* [Abe]
+* [Abe] Abeは重いのでとりあえずテキストを出すようにしました。
 
 ## Others
 
 * [addnode情報](http://seed.sighash.info/) 同期できないときにご確認ください。
 * [Webウォレット] (テスト中)
-* [したらば掲示板]
-* [外部Wiki1]
-* [コイン寄付ボタン]
-* [暗号通貨寄付ウィジェット]
-* [CPU用Miner制作] (Windows 64bit用バイナリあり)
-* [monagraph]
-* [Faucet](https://multi.xau.jp/faucet/)
-* [Pool stats](http://pool.xau.jp/stats/)
-
-## その他のコイン
-
-* ![sakuracoin64](images/sakuracoin64.png) [Sakuracoin]
+* [Faucet](https://pool.xau.jp/faucet/)
 
 ## ダウンロードについて
 
@@ -152,77 +127,11 @@ URLはohacのGitHubアカウントを使用しておりますので、こちら�
     e6667b158768333d52ae0d1461818cb5  sha1coin-0.8.7.2-win32.zip
     f55715f7692382e40f050357a1a72d0c  sha1coin-0.8.7.2-linux.tar.gz
 
-## 寄付
-
-<script src="http://coindonationwidget.com/widget/coin.js"></script>
-<script>
-  CoinWidgetCom.go({
-    wallet_address: "MNjFh6TvqYRS2xZMyfEcuKMhiitacKvysY"
-    , currency: "monacoin"
-    , counter: "count"
-    , qrcode: true
-    , auto_show: false
-    , decimals: 4
-    , lbl_button: "寄付する"
-    , lbl_address: "以下のアドレスに寄付する:"
-    , lbl_count: "回"
-    , lbl_amount: "MONA"
-  });
-</script>
-<script>
-  CoinWidgetCom.go({
-    wallet_address: "MTu6jrxp5xD6RHWeZUEpw7X5WnpmEzYTkd"
-    , currency: "sakuracoin"
-    , counter: "count"
-    , qrcode: true
-    , auto_show: false
-    , decimals: 4
-    , lbl_button: "寄付する"
-    , lbl_address: "以下のアドレスに寄付する:"
-    , lbl_count: "回"
-    , lbl_amount: "SKR"
-  });
-</script>
-<script>
-  CoinWidgetCom.go({
-    wallet_address: "SQqr32xpK6hkmDyJRvPLaLFzqzfjq1Dr6f"
-    , currency: "sha1coin"
-    , counter: "count"
-    , qrcode: true
-    , auto_show: false
-    , decimals: 4
-    , lbl_button: "寄付する"
-    , lbl_address: "以下のアドレスに寄付する:"
-    , lbl_count: "回"
-    , lbl_amount: "SHA"
-  });
-</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-[Bitmessage]: https://bitmessage.ch/
 [Sha1coin]: http://ohac.github.io/sha1coin/
 [ここからダウンロード]: https://github.com/ohac/sha1coin/releases
-[したらば掲示板交換]: http://jbbs.shitaraba.net/bbs/read.cgi/internet/19552/1388817096/l50
-[したらば掲示板]: http://jbbs.shitaraba.net/internet/19552/
-[外部Wiki1]: ttp://www59.atwiki.jp/japancryptocurrency/pages/18.html
 [sha1coin]: https://github.com/ohac/sha1coin
 [sha1coin-cpuminer]: https://github.com/ohac/sha1coin-cpuminer
-[Sakuracoin]: http://ohac.github.io/sakuracoin/
-[Twitterウォレット]: http://www.sighash.info/
-[Webウォレット]: http://coins.asiru.info/index2.html
-[コイン寄付ボタン]: http://bitcoinlove.lv9.co/
+[Twitterウォレット]: https://wallet.sighash.info/
 [Abe]: http://abe.sighash.info/
-[暗号通貨寄付ウィジェット]: http://coindonationwidget.com/jp/
-[CPU用Miner制作]: http://bitcoinlove.lv9.co/cpucoin.php
-[NOMP]: http://nomp.sighash.info/
-[monagraph]: http://monagraph.com/
-[LA Sha1coin Pool]: http://multi.xau.jp/sha1coin/
-[LA NOMP pool1]: http://pool1.xau.jp/
+[LA Sha1coin Pool]: https://pool.xau.jp/sha1coin/index.php
 [Sha1coin対応sgminer]: http://holo-n94.github.io/sph-sgminer/
