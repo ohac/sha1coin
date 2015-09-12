@@ -111,6 +111,7 @@ Linuxの場合は/home/ユーザー名/.sha1coinです。
 * [addnode情報](http://seed.sighash.info/) 同期できないときにご確認ください。
 * [Twitterウォレット]
 * [Faucet](https://pool.xau.jp/faucet/)
+* [Sha1coin Unofficial Wiki](http://sha1coin.cswiki.jp/)
 
 ## ダウンロードについて
 
